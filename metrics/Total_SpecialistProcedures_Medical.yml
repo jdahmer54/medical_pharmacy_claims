@@ -1,0 +1,8 @@
+unique_name: Total_SpecialistProcedures_Medical
+object_type: metric
+label: Total_SpecialistProcedures_Medical
+description: sum of fact_claim_medical_prof_ca_agg.specialistprocedurecount.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: specialistprocedurecount
+unrelated_dimensions_handling: repeat

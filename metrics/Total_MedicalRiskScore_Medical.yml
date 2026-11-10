@@ -1,0 +1,8 @@
+unique_name: Total_MedicalRiskScore_Medical
+object_type: metric
+label: Total_MedicalRiskScore_Medical
+description: sum of fact_mbrmonth_ca_agg.medicalriskscore.
+calculation_method: sum
+dataset: fact_mbrmonth_ca_agg
+column: medicalriskscore
+unrelated_dimensions_handling: repeat

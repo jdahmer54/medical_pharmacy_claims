@@ -1,0 +1,8 @@
+unique_name: Total_ExitMemberCount
+object_type: metric
+label: Total_ExitMemberCount
+description: sum of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.membercount where enroll_flag = 1.
+calculation_method: sum
+dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+column: membercount_when_4
+unrelated_dimensions_handling: repeat

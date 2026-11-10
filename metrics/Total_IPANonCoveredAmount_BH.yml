@@ -1,0 +1,8 @@
+unique_name: Total_IPANonCoveredAmount_BH
+object_type: metric
+label: Total_IPANonCoveredAmount_BH
+description: sum of fact_claim_medical_bh_ipa_ca_agg.noncoveredamount.
+calculation_method: sum
+dataset: fact_claim_medical_bh_ipa_ca_agg
+column: noncoveredamount
+unrelated_dimensions_handling: repeat

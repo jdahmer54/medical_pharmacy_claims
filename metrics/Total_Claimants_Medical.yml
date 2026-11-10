@@ -1,0 +1,8 @@
+unique_name: Total_Claimants_Medical
+object_type: metric
+label: Total_Claimants_Medical
+description: sum of fact_claim_medical_claimants_ca_agg.claimant_count where claimants_flag = 1.
+calculation_method: sum
+dataset: fact_claim_medical_claimants_ca_agg
+column: claimant_count_when_2
+unrelated_dimensions_handling: repeat

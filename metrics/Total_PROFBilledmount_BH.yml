@@ -1,0 +1,8 @@
+unique_name: Total_PROFBilledmount_BH
+object_type: metric
+label: Total_PROFBilledmount_BH
+description: sum of fact_claim_medical_bh_prof_ca_agg.medicalbilled.
+calculation_method: sum
+dataset: fact_claim_medical_bh_prof_ca_agg
+column: medicalbilled
+unrelated_dimensions_handling: repeat

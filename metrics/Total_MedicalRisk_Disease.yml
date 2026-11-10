@@ -1,0 +1,8 @@
+unique_name: Total_MedicalRisk_Disease
+object_type: metric
+label: Total_MedicalRisk_Disease
+description: sum of fact_claim_medical_claimants_ca_agg.medicalriskscore where ccsrl1_flag = 1.
+calculation_method: sum
+dataset: fact_claim_medical_claimants_ca_agg
+column: medicalriskscore_when_3
+unrelated_dimensions_handling: repeat

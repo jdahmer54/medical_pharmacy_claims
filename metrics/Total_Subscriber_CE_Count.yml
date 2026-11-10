@@ -1,0 +1,8 @@
+unique_name: Total_Subscriber_CE_Count
+object_type: metric
+label: Total_Subscriber_CE_Count
+description: sum of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.membercount where relationshipid = 2.
+calculation_method: sum
+dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+column: membercount_when_3
+unrelated_dimensions_handling: repeat

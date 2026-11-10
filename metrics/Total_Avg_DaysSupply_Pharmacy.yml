@@ -1,0 +1,8 @@
+unique_name: Total_Avg_DaysSupply_Pharmacy
+object_type: metric
+label: Total_Avg_DaysSupply_Pharmacy
+description: average of fact_pharmclaim_ca_agg.dayssupplycount.
+calculation_method: average
+dataset: fact_pharmclaim_ca_agg
+column: dayssupplycount
+unrelated_dimensions_handling: repeat
