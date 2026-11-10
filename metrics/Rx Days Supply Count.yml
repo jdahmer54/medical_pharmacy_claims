@@ -1,0 +1,8 @@
+unique_name: Rx Days Supply Count
+object_type: metric
+label: Rx Days Supply Count
+description: sum of fact_pharmclaim_ca_agg.dayssupplycount.
+calculation_method: sum
+dataset: fact_pharmclaim_ca_agg
+column: dayssupplycount
+unrelated_dimensions_handling: repeat

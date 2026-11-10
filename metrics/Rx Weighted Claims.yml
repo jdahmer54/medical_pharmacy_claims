@@ -1,0 +1,8 @@
+unique_name: Rx Weighted Claims
+object_type: metric
+label: Rx Weighted Claims
+description: sum of fact_pharmclaim_ca_agg.weightedclaims.
+calculation_method: sum
+dataset: fact_pharmclaim_ca_agg
+column: weightedclaims
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,8 @@
+unique_name: Rx Membership Id Distinct Count
+object_type: metric
+label: Rx Membership Id Distinct Count
+description: count distinct of fact_pharmclaim_ca_agg.membershipid.
+calculation_method: count distinct
+dataset: fact_pharmclaim_ca_agg
+column: membershipid
+unrelated_dimensions_handling: repeat

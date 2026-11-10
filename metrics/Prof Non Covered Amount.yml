@@ -1,0 +1,8 @@
+unique_name: Prof Non Covered Amount
+object_type: metric
+label: Prof Non Covered Amount
+description: sum of fact_claim_medical_prof_ca_agg.noncoveredamount.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: noncoveredamount
+unrelated_dimensions_handling: repeat

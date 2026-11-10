@@ -1,0 +1,8 @@
+unique_name: Cohort members still continuous
+object_type: metric
+label: Cohort members still continuous
+description: sum of fact_claim_medical_continuous_cohort_allmonths_ca_agg.members_still_continuous.
+calculation_method: sum
+dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+column: members_still_continuous
+unrelated_dimensions_handling: repeat

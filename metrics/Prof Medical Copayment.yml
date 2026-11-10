@@ -1,0 +1,8 @@
+unique_name: Prof Medical Copayment
+object_type: metric
+label: Prof Medical Copayment
+description: sum of fact_claim_medical_prof_ca_agg.medicalcopayment.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: medicalcopayment
+unrelated_dimensions_handling: repeat

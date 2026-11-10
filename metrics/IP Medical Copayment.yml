@@ -1,0 +1,8 @@
+unique_name: IP Medical Copayment
+object_type: metric
+label: IP Medical Copayment
+description: sum of fact_claim_medical_ipa_ca_agg.medicalcopayment.
+calculation_method: sum
+dataset: fact_claim_medical_ipa_ca_agg
+column: medicalcopayment
+unrelated_dimensions_handling: repeat

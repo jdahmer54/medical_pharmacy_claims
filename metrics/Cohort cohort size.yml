@@ -1,0 +1,8 @@
+unique_name: Cohort cohort size
+object_type: metric
+label: Cohort cohort size
+description: sum of fact_claim_medical_continuous_cohort_allmonths_ca_agg.cohort_size.
+calculation_method: sum
+dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+column: cohort_size
+unrelated_dimensions_handling: repeat

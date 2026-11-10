@@ -1,0 +1,8 @@
+unique_name: Prof Procedure Count
+object_type: metric
+label: Prof Procedure Count
+description: sum of fact_claim_medical_prof_ca_agg.procedurecount.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: procedurecount
+unrelated_dimensions_handling: repeat

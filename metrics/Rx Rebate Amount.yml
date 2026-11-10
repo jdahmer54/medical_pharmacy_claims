@@ -1,0 +1,8 @@
+unique_name: Rx Rebate Amount
+object_type: metric
+label: Rx Rebate Amount
+description: sum of fact_pharmclaim_ca_agg.rebateamount.
+calculation_method: sum
+dataset: fact_pharmclaim_ca_agg
+column: rebateamount
+unrelated_dimensions_handling: repeat
