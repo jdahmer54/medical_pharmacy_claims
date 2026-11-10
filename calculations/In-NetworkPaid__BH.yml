@@ -1,0 +1,5 @@
+unique_name: In-NetworkPaid%_BH
+object_type: metric_calc
+label: In-NetworkPaid%_BH
+description: Converted from DAX measure [In-NetworkPaid%_BH].
+expression: Divide(([Contract Status Dimension].[Contract Status Code].[Contract Status Code].&[INN], [Measures].[Total_NetpaidAmount_BH]), [Measures].[Total_NetpaidAmount_BH])

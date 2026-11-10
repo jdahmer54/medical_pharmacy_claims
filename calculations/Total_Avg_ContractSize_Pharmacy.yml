@@ -1,0 +1,5 @@
+unique_name: Total_Avg_ContractSize_Pharmacy
+object_type: metric_calc
+label: Total_Avg_ContractSize_Pharmacy
+description: Converted from DAX measure [Total_Avg_ContractSize_Pharmacy].
+expression: Divide([Measures].[Total_MemberMonth_Pharmacy], [Measures].[Total_SubscriberMonth_Pharmacy])

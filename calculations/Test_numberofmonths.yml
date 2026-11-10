@@ -1,0 +1,6 @@
+unique_name: Test_numberofmonths
+object_type: metric_calc
+label: Test_numberofmonths
+description: Converted from DAX measure [Test_numberofmonths].
+expression: '[Measures].[Member Month Month End Day Id Distinct Count]'
+format: general number

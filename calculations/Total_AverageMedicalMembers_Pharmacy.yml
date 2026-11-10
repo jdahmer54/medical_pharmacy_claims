@@ -1,0 +1,5 @@
+unique_name: Total_AverageMedicalMembers_Pharmacy
+object_type: metric_calc
+label: Total_AverageMedicalMembers_Pharmacy
+description: Converted from DAX measure [Total_AverageMedicalMembers_Pharmacy].
+expression: Divide([Measures].[Member Month Member Month], [Measures].[Member Month Membership Coverage Id Distinct Count], 0)

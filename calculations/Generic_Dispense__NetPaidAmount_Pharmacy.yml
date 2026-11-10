@@ -1,0 +1,7 @@
+unique_name: Generic_Dispense%_NetPaidAmount_Pharmacy
+object_type: metric_calc
+label: Generic_Dispense%_NetPaidAmount_Pharmacy
+description: Converted from DAX measure [Generic_Dispense%_NetPaidAmount_Pharmacy].
+expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Formulary Drug Type Name].[Drug Handling Profile Formulary Drug Type Name].&[Generic], [Measures].[Total_NetPaidAmount_Pharmacy]),
+  [Measures].[Total_NetPaidAmount_Pharmacy], 0)
+format: percent

@@ -1,0 +1,5 @@
+unique_name: In-NetworkVisitsOUT%_Medical
+object_type: metric_calc
+label: In-NetworkVisitsOUT%_Medical
+description: Converted from DAX measure [In-NetworkVisitsOUT%_Medical].
+expression: Divide(([Contract Status Dimension].[Contract Status Code].[Contract Status Code].&[INN], [Measures].[Total_OUTVisits_Medical]), [Measures].[Total_OUTVisits_Medical])

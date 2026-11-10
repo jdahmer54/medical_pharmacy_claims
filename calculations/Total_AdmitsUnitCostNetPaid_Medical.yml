@@ -1,0 +1,5 @@
+unique_name: Total_AdmitsUnitCostNetPaid_Medical
+object_type: metric_calc
+label: Total_AdmitsUnitCostNetPaid_Medical
+description: Converted from DAX measure [Total_AdmitsUnitCostNetPaid_Medical].
+expression: Divide([Measures].[Total_IPANetPaidAmount_Medical], [Measures].[Total_Admits_Medical])
