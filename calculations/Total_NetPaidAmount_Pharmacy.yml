@@ -1,0 +1,5 @@
+unique_name: Total_NetPaidAmount_Pharmacy
+object_type: metric_calc
+label: Total_NetPaidAmount_Pharmacy
+description: Converted from DAX measure [Total_NetPaidAmount_Pharmacy].
+expression: '[Measures].[Rx Net Paid Amount]'

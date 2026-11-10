@@ -1,0 +1,5 @@
+unique_name: Total_OUTUnitCostAllowed_Medical
+object_type: metric_calc
+label: Total_OUTUnitCostAllowed_Medical
+description: Converted from DAX measure [Total_OUTUnitCostAllowed_Medical].
+expression: Divide([Measures].[Total_OUTAllowedAmount_Medical], [Measures].[Total_AdmissionDays_Medical])

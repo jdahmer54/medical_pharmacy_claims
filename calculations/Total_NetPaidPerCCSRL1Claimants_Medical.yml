@@ -1,0 +1,5 @@
+unique_name: Total_NetPaidPerCCSRL1Claimants_Medical
+object_type: metric_calc
+label: Total_NetPaidPerCCSRL1Claimants_Medical
+description: Converted from DAX measure [Total_NetPaidPerCCSRL1Claimants_Medical].
+expression: Divide([Measures].[Total_NetpaidAmount_Medical], [Measures].[Total_CCSRL1Claimants_Medical])

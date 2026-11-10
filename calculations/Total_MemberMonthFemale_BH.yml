@@ -1,0 +1,6 @@
+unique_name: Total_MemberMonthFemale_BH
+object_type: metric_calc
+label: Total_MemberMonthFemale_BH
+description: Converted from DAX measure [Total_MemberMonthFemale_BH].
+expression: ([Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y], [Measures].[Total_FemaleMemberMonth])
+format: general number

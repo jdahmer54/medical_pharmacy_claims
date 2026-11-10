@@ -1,0 +1,5 @@
+unique_name: Total_OUTALOS_BH
+object_type: metric_calc
+label: Total_OUTALOS_BH
+description: Converted from DAX measure [Total_OUTALOS_BH].
+expression: Divide(([Measures].[Total_OUTDays_BH]), [Measures].[Total_OUTAdmits_BH])

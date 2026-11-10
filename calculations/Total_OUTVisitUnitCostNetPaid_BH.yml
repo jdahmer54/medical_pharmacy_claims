@@ -1,0 +1,5 @@
+unique_name: Total_OUTVisitUnitCostNetPaid_BH
+object_type: metric_calc
+label: Total_OUTVisitUnitCostNetPaid_BH
+description: Converted from DAX measure [Total_OUTVisitUnitCostNetPaid_BH].
+expression: Divide([Measures].[Total_OUTNetPaidAmount_BH], [Measures].[Total_OUTVisits_BH])

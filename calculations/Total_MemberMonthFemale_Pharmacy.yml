@@ -1,0 +1,6 @@
+unique_name: Total_MemberMonthFemale_Pharmacy
+object_type: metric_calc
+label: Total_MemberMonthFemale_Pharmacy
+description: Converted from DAX measure [Total_MemberMonthFemale_Pharmacy].
+expression: ([Membership Coverage Dimension].[Membership Coverage Drug Indicator].[Membership Coverage Drug Indicator].&[Y], [Measures].[Total_FemaleMemberMonth])
+format: general number
