@@ -1,5 +1,0 @@
-unique_name: Total_PEPMRetailAllowed_Pharmacy
-object_type: metric_calc
-label: Total_PEPMRetailAllowed_Pharmacy
-description: Converted from DAX measure [Total_PEPMRetailAllowed_Pharmacy].
-expression: Divide([Measures].[Total_RetailAllowed_Pharmacy], [Measures].[Total_SubscriberMonth])

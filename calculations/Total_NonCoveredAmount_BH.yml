@@ -1,5 +1,0 @@
-unique_name: Total_NonCoveredAmount_BH
-object_type: metric_calc
-label: Total_NonCoveredAmount_BH
-description: Converted from DAX measure [Total_NonCoveredAmount_BH].
-expression: '[Measures].[Total_IPANonCoveredAmount_BH] + [Measures].[Total_OUTNonCoveredAmount_BH] + [Measures].[Total_PROFNonCoveredAmount_BH]'

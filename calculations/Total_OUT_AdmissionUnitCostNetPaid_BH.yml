@@ -1,5 +1,0 @@
-unique_name: Total_OUT_AdmissionUnitCostNetPaid_BH
-object_type: metric_calc
-label: Total_OUT_AdmissionUnitCostNetPaid_BH
-description: Converted from DAX measure [Total_OUT_AdmissionUnitCostNetPaid_BH].
-expression: Divide([Measures].[Total_OUTNetPaidAmount_BH], [Measures].[Total_OUTDays_BH])

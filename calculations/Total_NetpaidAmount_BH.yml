@@ -1,5 +1,0 @@
-unique_name: Total_NetpaidAmount_BH
-object_type: metric_calc
-label: Total_NetpaidAmount_BH
-description: Converted from DAX measure [Total_NetpaidAmount_BH].
-expression: '[Measures].[Total_IPANetPaidAmount_BH] + [Measures].[Total_OUTNetPaidAmount_BH] + [Measures].[Total_PROFNetPaidAmount_BH]'

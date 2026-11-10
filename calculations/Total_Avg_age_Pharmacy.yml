@@ -1,5 +1,0 @@
-unique_name: Total_Avg_age_Pharmacy
-object_type: metric_calc
-label: Total_Avg_age_Pharmacy
-description: Converted from DAX measure [Total_Avg_age_Pharmacy].
-expression: '[Measures].[Total_Avg_age_medical]'

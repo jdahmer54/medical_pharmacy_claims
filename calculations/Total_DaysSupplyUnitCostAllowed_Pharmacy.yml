@@ -1,6 +1,0 @@
-unique_name: Total_DaysSupplyUnitCostAllowed_Pharmacy
-object_type: metric_calc
-label: Total_DaysSupplyUnitCostAllowed_Pharmacy
-description: Converted from DAX measure [Total_DaysSupplyUnitCostAllowed_Pharmacy].
-expression: Divide([Measures].[Total_AllowedAmount_Pharmacy], [Measures].[Total_DaysSupply_Pharmacy])
-format: $#,##0.00

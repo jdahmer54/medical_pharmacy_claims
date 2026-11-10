@@ -1,7 +1,0 @@
-unique_name: HCCType_Allowed%_Medical
-object_type: metric_calc
-label: HCCType_Allowed%_Medical
-description: Converted from DAX measure [HCCType_Allowed%_Medical].
-expression: Divide([Measures].[Total_AllowedAmount_Medical], ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng schm nm].[All],
-  [High Cost Claimant Dimension].[High Cost Claimant cost rng lowr amt].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng upr lmt amt].[All], [High Cost Claimant Dimension].[High Cost Claimant
-  HCCType].[All], [Measures].[Total_AllowedAmount_Medical]))

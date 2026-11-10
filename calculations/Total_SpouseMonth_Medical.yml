@@ -1,6 +1,0 @@
-unique_name: Total_SpouseMonth_Medical
-object_type: metric_calc
-label: Total_SpouseMonth_Medical
-description: Converted from DAX measure [Total_SpouseMonth_Medical].
-expression: ([Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y], [Measures].[Total_SpouseMonth])
-format: general number

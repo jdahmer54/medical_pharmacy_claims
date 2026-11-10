@@ -1,6 +1,0 @@
-unique_name: Total_PROFProcedures_Medical
-object_type: metric_calc
-label: Total_PROFProcedures_Medical
-description: Converted from DAX measure [Total_PROFProcedures_Medical].
-expression: '[Measures].[Prof Procedure Count]'
-format: general number

@@ -1,5 +1,0 @@
-unique_name: Total_CCSRL1Claimantsperk_BH
-object_type: metric_calc
-label: Total_CCSRL1Claimantsperk_BH
-description: Converted from DAX measure [Total_CCSRL1Claimantsperk_BH].
-expression: Divide([Measures].[Total_CCSRL1Claimants_BH] * 12000, [Measures].[Total_MemberMonth_Medical])

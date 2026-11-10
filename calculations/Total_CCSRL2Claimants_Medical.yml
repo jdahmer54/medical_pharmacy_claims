@@ -1,6 +1,0 @@
-unique_name: Total_CCSRL2Claimants_Medical
-object_type: metric_calc
-label: Total_CCSRL2Claimants_Medical
-description: Converted from DAX measure [Total_CCSRL2Claimants_Medical].
-expression: '[Measures].[Claimants claimant count]'
-format: general number

@@ -1,5 +1,0 @@
-unique_name: Total_AdmitsUnitCostNetPaid_BH
-object_type: metric_calc
-label: Total_AdmitsUnitCostNetPaid_BH
-description: Converted from DAX measure [Total_AdmitsUnitCostNetPaid_BH].
-expression: Divide([Measures].[Total_IPANetPaidAmount_BH], [Measures].[Total_Admits_BH])

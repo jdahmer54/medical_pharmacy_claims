@@ -1,5 +1,0 @@
-unique_name: Total_Plan_Paid_BH
-object_type: metric_calc
-label: Total_Plan_Paid_BH
-description: Converted from DAX measure [Total_Plan_Paid_BH].
-expression: Divide([Measures].[Total_NetpaidAmount_BH], [Measures].[Total_AllowedAmount_BH])

@@ -1,5 +1,0 @@
-unique_name: Total_Unitcost_Medical
-object_type: metric_calc
-label: Total_Unitcost_Medical
-description: Converted from DAX measure [Total_Unitcost_Medical].
-expression: '[Measures].[Total_IPAUnitCostAllowed_Medical] + [Measures].[Total_OUTUnitCostAllowed_Medical] + [Measures].[Total_PROFUnitCostAllowed_Medical]'

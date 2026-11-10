@@ -1,5 +1,0 @@
-unique_name: Total_PROFNonCoveredAmount_Medical
-object_type: metric_calc
-label: Total_PROFNonCoveredAmount_Medical
-description: Converted from DAX measure [Total_PROFNonCoveredAmount_Medical].
-expression: '[Measures].[Prof Non Covered Amount]'

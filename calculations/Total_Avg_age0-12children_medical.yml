@@ -1,6 +1,0 @@
-unique_name: Total_Avg_age0-12children_medical
-object_type: metric_calc
-label: Total_Avg_age0-12children_medical
-description: Converted from DAX measure [Total_Avg_age0-12children_medical].
-expression: ([Member Lifestage Dimension].[Member Lifestage Hierarchy].[Member Lifestage].&[1], [Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y],
-  [Measures].[Total_Avg_age_medical])

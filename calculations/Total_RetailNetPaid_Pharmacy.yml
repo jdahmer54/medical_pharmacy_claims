@@ -1,5 +1,0 @@
-unique_name: Total_RetailNetPaid_Pharmacy
-object_type: metric_calc
-label: Total_RetailNetPaid_Pharmacy
-description: Converted from DAX measure [Total_RetailNetPaid_Pharmacy].
-expression: ([Drug Handling Profile Dimension].[Drug Handling Profile Mail Order Type Name].[Drug Handling Profile Mail Order Type Name].&[Retail], [Measures].[Rx Net Paid Amount])

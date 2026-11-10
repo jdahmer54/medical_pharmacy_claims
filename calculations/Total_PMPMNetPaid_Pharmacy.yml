@@ -1,5 +1,0 @@
-unique_name: Total_PMPMNetPaid_Pharmacy
-object_type: metric_calc
-label: Total_PMPMNetPaid_Pharmacy
-description: Converted from DAX measure [Total_PMPMNetPaid_Pharmacy].
-expression: Divide([Measures].[Total_NetPaidAmount_Pharmacy], [Measures].[Total_MemberMonth_Pharmacy])

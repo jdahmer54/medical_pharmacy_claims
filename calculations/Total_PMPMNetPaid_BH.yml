@@ -1,5 +1,0 @@
-unique_name: Total_PMPMNetPaid_BH
-object_type: metric_calc
-label: Total_PMPMNetPaid_BH
-description: Converted from DAX measure [Total_PMPMNetPaid_BH].
-expression: Divide([Measures].[Total_NetpaidAmount_BH], [Measures].[Total_MemberMonth_Medical])

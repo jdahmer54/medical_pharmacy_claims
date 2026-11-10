@@ -1,7 +1,0 @@
-unique_name: Generic_Dispense%_AllowedAmount_Pharmacy
-object_type: metric_calc
-label: Generic_Dispense%_AllowedAmount_Pharmacy
-description: Converted from DAX measure [Generic_Dispense%_AllowedAmount_Pharmacy].
-expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Formulary Drug Type Name].[Drug Handling Profile Formulary Drug Type Name].&[Generic], [Measures].[Total_AllowedAmount_Pharmacy]),
-  [Measures].[Total_AllowedAmount_Pharmacy], 0)
-format: percent

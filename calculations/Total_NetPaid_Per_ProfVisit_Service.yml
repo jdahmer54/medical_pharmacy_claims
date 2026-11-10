@@ -1,6 +1,0 @@
-unique_name: Total_NetPaid_Per_ProfVisit_Service
-object_type: metric_calc
-label: Total_NetPaid_Per_ProfVisit_Service
-description: Converted from DAX measure [Total_NetPaid_Per_ProfVisit_Service].
-expression: Divide([Measures].[Total_PROFNetPaidAmount_Medical], ([Measures].[Total_PROFVisits_Service]))
-format: $#,##0.00

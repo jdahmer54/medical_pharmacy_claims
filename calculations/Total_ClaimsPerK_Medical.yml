@@ -1,6 +1,0 @@
-unique_name: Total_ClaimsPerK_Medical
-object_type: metric_calc
-label: Total_ClaimsPerK_Medical
-description: Converted from DAX measure [Total_ClaimsPerK_Medical].
-expression: '[Measures].[Total_IPAClaimsPerK_Medical] + [Measures].[Total_OUTClaimsPerK_Medical] + [Measures].[Total_PROFClaimsPerK_Medical]'
-format: general number

@@ -1,5 +1,0 @@
-unique_name: Total_PROFNonCoveredAmount_BH
-object_type: metric_calc
-label: Total_PROFNonCoveredAmount_BH
-description: Converted from DAX measure [Total_PROFNonCoveredAmount_BH].
-expression: '[Measures].[BH Prof Non Covered Amount]'

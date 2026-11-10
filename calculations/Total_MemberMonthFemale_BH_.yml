@@ -1,5 +1,0 @@
-unique_name: Total_MemberMonthFemale_BH%
-object_type: metric_calc
-label: Total_MemberMonthFemale_BH%
-description: Converted from DAX measure [Total_MemberMonthFemale_BH%].
-expression: Divide([Measures].[Total_MemberMonthFemale_BH], [Measures].[Total_MemberMonth_Medical])

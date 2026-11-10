@@ -1,5 +1,0 @@
-unique_name: Total_PEPMRetailNetPaid_Pharmacy
-object_type: metric_calc
-label: Total_PEPMRetailNetPaid_Pharmacy
-description: Converted from DAX measure [Total_PEPMRetailNetPaid_Pharmacy].
-expression: '[Measures].[Total_RetailNetPaid_Pharmacy] / [Measures].[Total_SubscriberMonth]'

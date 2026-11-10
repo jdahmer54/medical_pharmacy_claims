@@ -1,5 +1,0 @@
-unique_name: Total_YearlyServicesPerK_BH
-object_type: metric_calc
-label: Total_YearlyServicesPerK_BH
-description: Converted from DAX measure [Total_YearlyServicesPerK_BH].
-expression: Divide(([Measures].[Total_PROFProcedures_BH] * 12000), [Measures].[Total_MemberMonth_Medical])

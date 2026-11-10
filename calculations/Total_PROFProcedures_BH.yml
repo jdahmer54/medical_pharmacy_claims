@@ -1,6 +1,0 @@
-unique_name: Total_PROFProcedures_BH
-object_type: metric_calc
-label: Total_PROFProcedures_BH
-description: Converted from DAX measure [Total_PROFProcedures_BH].
-expression: '[Measures].[BH Prof Procedure Count]'
-format: general number

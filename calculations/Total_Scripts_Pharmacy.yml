@@ -1,6 +1,0 @@
-unique_name: Total_Scripts_Pharmacy
-object_type: metric_calc
-label: Total_Scripts_Pharmacy
-description: Converted from DAX measure [Total_Scripts_Pharmacy].
-expression: '[Measures].[Rx Weighted Claims]'
-format: general number

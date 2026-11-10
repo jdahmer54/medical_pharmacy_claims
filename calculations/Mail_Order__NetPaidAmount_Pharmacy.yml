@@ -1,6 +1,0 @@
-unique_name: Mail_Order%_NetPaidAmount_Pharmacy
-object_type: metric_calc
-label: Mail_Order%_NetPaidAmount_Pharmacy
-description: Converted from DAX measure [Mail_Order%_NetPaidAmount_Pharmacy].
-expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Mail Order Type Name].[Drug Handling Profile Mail Order Type Name].&[Mail Order], [Measures].[Total_NetPaidAmount_Pharmacy]),
-  [Measures].[Total_NetPaidAmount_Pharmacy], 0)

@@ -1,5 +1,0 @@
-unique_name: Total_DiscountAmount_Medical
-object_type: metric_calc
-label: Total_DiscountAmount_Medical
-description: Converted from DAX measure [Total_DiscountAmount_Medical].
-expression: '[Measures].[Total_IPADiscountAmount_Medical] + [Measures].[Total_OUTDiscountAmount_Medical] + [Measures].[Total_PROFDiscountAmount_Medical]'

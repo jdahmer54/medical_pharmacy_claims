@@ -1,6 +1,0 @@
-unique_name: CCSRL1_PrevalenceRate%
-object_type: metric_calc
-label: CCSRL1_PrevalenceRate%
-description: Converted from DAX measure [CCSRL1_PrevalenceRate%].
-expression: Divide([Measures].[Total_CCSRL1Claimants_Medical], ([CCSR Diagnosis Dimension].[CCSR Diagnosis Disease].[All], [Measures].[Total_CCSRL1Claimants_Medical]), 0)
-format: percent

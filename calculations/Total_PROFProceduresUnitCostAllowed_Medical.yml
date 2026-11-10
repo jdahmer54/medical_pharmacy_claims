@@ -1,5 +1,0 @@
-unique_name: Total_PROFProceduresUnitCostAllowed_Medical
-object_type: metric_calc
-label: Total_PROFProceduresUnitCostAllowed_Medical
-description: Converted from DAX measure [Total_PROFProceduresUnitCostAllowed_Medical].
-expression: Divide([Measures].[Total_PROFAllowedAmount_Medical], [Measures].[Total_PROFProcedures_Medical])

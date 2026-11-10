@@ -1,6 +1,0 @@
-unique_name: Total_OOP_BH
-object_type: metric_calc
-label: Total_OOP_BH
-description: Converted from DAX measure [Total_OOP_BH].
-expression: '[Measures].[BH IP Medical Coinsurance] + [Measures].[BH IP Medical Copayment] + [Measures].[BH IP Medical Deductible] + [Measures].[BH OP Medical Coinsurance] + [Measures].[BH OP Medical Copayment]
-  + [Measures].[BH OP Medical Deductible] + [Measures].[BH Prof Medical Coinsurance] + [Measures].[BH Prof Medical Copayment] + [Measures].[BH Prof Medical Deductible]'

@@ -1,6 +1,0 @@
-unique_name: Total_Allowed_Per_OPVisit
-object_type: metric_calc
-label: Total_Allowed_Per_OPVisit
-description: Converted from DAX measure [Total_Allowed_Per_OPVisit].
-expression: Divide([Measures].[Total_OUTAllowedAmount_Medical], ([Measures].[Total_OUTVisits_Medical]))
-format: $#,##0.00

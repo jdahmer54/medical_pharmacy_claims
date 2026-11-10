@@ -1,5 +1,0 @@
-unique_name: Total_YearlyAdmitsPerK_Medical
-object_type: metric_calc
-label: Total_YearlyAdmitsPerK_Medical
-description: Converted from DAX measure [Total_YearlyAdmitsPerK_Medical].
-expression: Divide(([Measures].[Total_Admits_Medical] * 12000), [Measures].[Total_MemberMonth_Medical])

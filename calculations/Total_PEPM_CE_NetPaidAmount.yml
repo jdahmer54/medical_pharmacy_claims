@@ -1,5 +1,0 @@
-unique_name: Total_PEPM_CE_NetPaidAmount
-object_type: metric_calc
-label: Total_PEPM_CE_NetPaidAmount
-description: Converted from DAX measure [Total_PEPM_CE_NetPaidAmount].
-expression: Divide([Measures].[Cont Enroll Net Paid Amount Avg], [Measures].[Total_Subscriber_CE_Count])

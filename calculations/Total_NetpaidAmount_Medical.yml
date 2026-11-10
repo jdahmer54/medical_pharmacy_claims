@@ -1,5 +1,0 @@
-unique_name: Total_NetpaidAmount_Medical
-object_type: metric_calc
-label: Total_NetpaidAmount_Medical
-description: Converted from DAX measure [Total_NetpaidAmount_Medical].
-expression: '[Measures].[Total_IPANetPaidAmount_Medical] + [Measures].[Total_OUTNetPaidAmount_Medical] + [Measures].[Total_PROFNetPaidAmount_Medical]'

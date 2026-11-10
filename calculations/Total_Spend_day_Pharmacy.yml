@@ -1,5 +1,0 @@
-unique_name: Total_Spend/day_Pharmacy
-object_type: metric_calc
-label: Total_Spend/day_Pharmacy
-description: Converted from DAX measure [Total_Spend/day_Pharmacy].
-expression: Divide(Divide([Measures].[Rx Net Paid Amount], [Measures].[Rx Provider Allowed Amount]), [Measures].[Rx Days Supply Count])

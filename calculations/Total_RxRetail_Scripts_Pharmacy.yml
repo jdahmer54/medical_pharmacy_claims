@@ -1,6 +1,0 @@
-unique_name: Total_RxRetail%Scripts_Pharmacy
-object_type: metric_calc
-label: Total_RxRetail%Scripts_Pharmacy
-description: Converted from DAX measure [Total_RxRetail%Scripts_Pharmacy].
-expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Mail Order Type Name].[Drug Handling Profile Mail Order Type Name].&[Retail], [Measures].[Rx Weighted Claims]), [Measures].[Rx
-  Weighted Claims], 0)

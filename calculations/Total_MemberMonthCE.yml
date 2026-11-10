@@ -1,6 +1,0 @@
-unique_name: Total_MemberMonthCE
-object_type: metric_calc
-label: Total_MemberMonthCE
-description: Converted from DAX measure [Total_MemberMonthCE].
-expression: '[Measures].[Cont Enroll Member Count]'
-format: general number

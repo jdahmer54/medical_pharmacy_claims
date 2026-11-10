@@ -1,5 +1,0 @@
-unique_name: total_Avg_Contractsize
-object_type: metric_calc
-label: total_Avg_Contractsize
-description: Converted from DAX measure [total_Avg_Contractsize].
-expression: Divide([Measures].[Total_MemberMonth], [Measures].[Total_SubscriberMonth])

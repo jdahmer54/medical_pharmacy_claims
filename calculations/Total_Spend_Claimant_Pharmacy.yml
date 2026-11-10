@@ -1,5 +1,0 @@
-unique_name: Total_Spend/Claimant_Pharmacy
-object_type: metric_calc
-label: Total_Spend/Claimant_Pharmacy
-description: Converted from DAX measure [Total_Spend/Claimant_Pharmacy].
-expression: Divide(Divide([Measures].[Rx Net Paid Amount], [Measures].[Rx Provider Allowed Amount]), [Measures].[Rx Membership Id Distinct Count])

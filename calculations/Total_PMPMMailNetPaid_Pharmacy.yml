@@ -1,5 +1,0 @@
-unique_name: Total_PMPMMailNetPaid_Pharmacy
-object_type: metric_calc
-label: Total_PMPMMailNetPaid_Pharmacy
-description: Converted from DAX measure [Total_PMPMMailNetPaid_Pharmacy].
-expression: '[Measures].[Total_MailNetPaid_Pharmacy] / [Measures].[Total_MemberMonth_Pharmacy]'

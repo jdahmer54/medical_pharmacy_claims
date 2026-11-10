@@ -1,5 +1,0 @@
-unique_name: Total_ALOS_BH
-object_type: metric_calc
-label: Total_ALOS_BH
-description: Converted from DAX measure [Total_ALOS_BH].
-expression: Divide(([Measures].[Total_AdmissionDays_BH]), [Measures].[Total_Admits_BH])

@@ -1,5 +1,0 @@
-unique_name: Total_Avg_ContractSize_BH
-object_type: metric_calc
-label: Total_Avg_ContractSize_BH
-description: Converted from DAX measure [Total_Avg_ContractSize_BH].
-expression: Divide([Measures].[Total_MemberMonth_Medical], [Measures].[Total_SubscriberMonth_Medical])

@@ -1,5 +1,0 @@
-unique_name: Total_SpecialtyNetPaid_Pharmacy
-object_type: metric_calc
-label: Total_SpecialtyNetPaid_Pharmacy
-description: Converted from DAX measure [Total_SpecialtyNetPaid_Pharmacy].
-expression: ([Drug Dimension].[Drug Specialty Drug Indicator].[Drug Specialty Drug Indicator].&[Yes], [Measures].[Rx Net Paid Amount])

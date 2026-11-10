@@ -1,5 +1,0 @@
-unique_name: Total_DaysSupply_Pharmacy
-object_type: metric_calc
-label: Total_DaysSupply_Pharmacy
-description: Converted from DAX measure [Total_DaysSupply_Pharmacy].
-expression: '[Measures].[Rx Days Supply Count]'

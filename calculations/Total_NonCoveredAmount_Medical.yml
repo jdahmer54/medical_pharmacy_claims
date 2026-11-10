@@ -1,5 +1,0 @@
-unique_name: Total_NonCoveredAmount_Medical
-object_type: metric_calc
-label: Total_NonCoveredAmount_Medical
-description: Converted from DAX measure [Total_NonCoveredAmount_Medical].
-expression: '[Measures].[Total_IPANonCoveredAmount_Medical] + [Measures].[Total_OUTNonCoveredAmount_Medical] + [Measures].[Total_PROFNonCoveredAmount_Medical]'

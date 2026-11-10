@@ -1,5 +1,0 @@
-unique_name: Total_Avg_age_BH
-object_type: metric_calc
-label: Total_Avg_age_BH
-description: Converted from DAX measure [Total_Avg_age_BH].
-expression: '[Measures].[Total_Avg_age_medical]'

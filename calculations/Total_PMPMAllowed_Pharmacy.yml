@@ -1,5 +1,0 @@
-unique_name: Total_PMPMAllowed_Pharmacy
-object_type: metric_calc
-label: Total_PMPMAllowed_Pharmacy
-description: Converted from DAX measure [Total_PMPMAllowed_Pharmacy].
-expression: Divide([Measures].[Total_AllowedAmount_Pharmacy], [Measures].[Total_MemberMonth_Pharmacy])

@@ -1,6 +1,0 @@
-unique_name: Total_AllowedAmount_Medical
-object_type: metric_calc
-label: Total_AllowedAmount_Medical
-description: Converted from DAX measure [Total_AllowedAmount_Medical].
-expression: '[Measures].[Total_IPAAllowedAmount_Medical] + [Measures].[Total_OUTAllowedAmount_Medical] + [Measures].[Total_PROFAllowedAmount_Medical]'
-format: $#,##0.00
