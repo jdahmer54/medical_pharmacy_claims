@@ -1,0 +1,8 @@
+unique_name: Total_OUTNetPaidAmount_Medical
+object_type: metric
+label: Total_OUTNetPaidAmount_Medical
+description: sum of fact_claim_medical_out_ca_agg.netpaidamount.
+calculation_method: sum
+dataset: fact_claim_medical_out_ca_agg
+column: netpaidamount
+unrelated_dimensions_handling: repeat

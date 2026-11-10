@@ -1,0 +1,8 @@
+unique_name: Total_OUTDiscountAmount_Medical
+object_type: metric
+label: Total_OUTDiscountAmount_Medical
+description: sum of fact_claim_medical_out_ca_agg.medicaldiscount.
+calculation_method: sum
+dataset: fact_claim_medical_out_ca_agg
+column: medicaldiscount
+unrelated_dimensions_handling: repeat

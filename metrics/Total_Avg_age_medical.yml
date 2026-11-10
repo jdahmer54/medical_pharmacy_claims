@@ -1,0 +1,8 @@
+unique_name: Total_Avg_age_medical
+object_type: metric
+label: Total_Avg_age_medical
+description: average of fact_mbrmonth_ca_agg.age.
+calculation_method: average
+dataset: fact_mbrmonth_ca_agg
+column: age
+unrelated_dimensions_handling: repeat

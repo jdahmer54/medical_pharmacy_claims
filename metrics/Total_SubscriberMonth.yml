@@ -1,0 +1,8 @@
+unique_name: Total_SubscriberMonth
+object_type: metric
+label: Total_SubscriberMonth
+description: sum of fact_mbrmonth_ca_agg.membershipmonth where relationshipid = 2.
+calculation_method: sum
+dataset: fact_mbrmonth_ca_agg
+column: membershipmonth_when_1
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,8 @@
+unique_name: Total_PROFVisits_Service
+object_type: metric
+label: Total_PROFVisits_Service
+description: sum of fact_claim_medical_prof_ca_agg.visitcount.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: visitcount
+unrelated_dimensions_handling: repeat
