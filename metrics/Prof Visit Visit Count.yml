@@ -1,0 +1,8 @@
+unique_name: Prof Visit Visit Count
+object_type: metric
+label: Prof Visit Visit Count
+description: sum of fact_claim_medical_prof_visitcnt_ca_agg.visitcount.
+calculation_method: sum
+dataset: fact_claim_medical_prof_visitcnt_ca_agg
+column: visitcount
+unrelated_dimensions_handling: repeat

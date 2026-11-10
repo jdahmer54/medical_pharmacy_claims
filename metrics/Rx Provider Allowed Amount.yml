@@ -1,0 +1,8 @@
+unique_name: Rx Provider Allowed Amount
+object_type: metric
+label: Rx Provider Allowed Amount
+description: sum of fact_pharmclaim_ca_agg.providerallowedamount.
+calculation_method: sum
+dataset: fact_pharmclaim_ca_agg
+column: providerallowedamount
+unrelated_dimensions_handling: repeat

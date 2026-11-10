@@ -1,0 +1,8 @@
+unique_name: BH Prof Loc Key Count
+object_type: metric
+label: BH Prof Loc Key Count
+description: sum of fact_claim_medical_bh_prof_ca_agg.lockeycount.
+calculation_method: sum
+dataset: fact_claim_medical_bh_prof_ca_agg
+column: lockeycount
+unrelated_dimensions_handling: repeat

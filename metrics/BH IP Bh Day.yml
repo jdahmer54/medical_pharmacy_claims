@@ -1,0 +1,8 @@
+unique_name: BH IP Bh Day
+object_type: metric
+label: BH IP Bh Day
+description: sum of fact_claim_medical_bh_ipa_ca_agg.bhday.
+calculation_method: sum
+dataset: fact_claim_medical_bh_ipa_ca_agg
+column: bhday
+unrelated_dimensions_handling: repeat

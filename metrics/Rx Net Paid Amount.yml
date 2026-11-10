@@ -1,0 +1,8 @@
+unique_name: Rx Net Paid Amount
+object_type: metric
+label: Rx Net Paid Amount
+description: sum of fact_pharmclaim_ca_agg.netpaidamount.
+calculation_method: sum
+dataset: fact_pharmclaim_ca_agg
+column: netpaidamount
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,8 @@
+unique_name: Claimants Medical Risk Score
+object_type: metric
+label: Claimants Medical Risk Score
+description: sum of fact_claim_medical_claimants_ca_agg.medicalriskscore.
+calculation_method: sum
+dataset: fact_claim_medical_claimants_ca_agg
+column: medicalriskscore
+unrelated_dimensions_handling: repeat

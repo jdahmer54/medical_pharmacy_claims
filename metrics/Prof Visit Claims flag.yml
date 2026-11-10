@@ -1,0 +1,8 @@
+unique_name: Prof Visit Claims flag
+object_type: metric
+label: Prof Visit Claims flag
+description: sum of fact_claim_medical_prof_visitcnt_ca_agg.claims_flag.
+calculation_method: sum
+dataset: fact_claim_medical_prof_visitcnt_ca_agg
+column: claims_flag
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,8 @@
+unique_name: Prof Medical Deductible
+object_type: metric
+label: Prof Medical Deductible
+description: sum of fact_claim_medical_prof_ca_agg.medicaldeductible.
+calculation_method: sum
+dataset: fact_claim_medical_prof_ca_agg
+column: medicaldeductible
+unrelated_dimensions_handling: repeat
