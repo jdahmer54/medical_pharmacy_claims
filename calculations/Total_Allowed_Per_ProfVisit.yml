@@ -1,0 +1,6 @@
+unique_name: Total_Allowed_Per_ProfVisit
+object_type: metric_calc
+label: Total_Allowed_Per_ProfVisit
+description: Converted from DAX measure [Total_Allowed_Per_ProfVisit].
+expression: Divide([Measures].[Total_PROFAllowedAmount_Medical], ([Measures].[Total_PROFVisits_Medical]))
+format: $#,##0.00

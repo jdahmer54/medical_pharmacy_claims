@@ -1,0 +1,6 @@
+unique_name: Total_DependentMonth_Medical
+object_type: metric_calc
+label: Total_DependentMonth_Medical
+description: Converted from DAX measure [Total_DependentMonth_Medical].
+expression: ([Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y], [Measures].[Total_DependentMonth])
+format: general number

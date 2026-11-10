@@ -1,0 +1,5 @@
+unique_name: Total_AdmissionDays_BH
+object_type: metric_calc
+label: Total_AdmissionDays_BH
+description: Converted from DAX measure [Total_AdmissionDays_BH].
+expression: '[Measures].[Total_AdmissionDays_Medical]'

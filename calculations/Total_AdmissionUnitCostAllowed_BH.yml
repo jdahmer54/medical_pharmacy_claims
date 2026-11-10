@@ -1,0 +1,5 @@
+unique_name: Total_AdmissionUnitCostAllowed_BH
+object_type: metric_calc
+label: Total_AdmissionUnitCostAllowed_BH
+description: Converted from DAX measure [Total_AdmissionUnitCostAllowed_BH].
+expression: Divide([Measures].[Total_IPAAllowedAmount_BH], [Measures].[Total_AdmissionDays_BH])

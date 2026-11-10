@@ -1,0 +1,7 @@
+unique_name: Mail_Order%_AllowedAmount_Pharmacy
+object_type: metric_calc
+label: Mail_Order%_AllowedAmount_Pharmacy
+description: Converted from DAX measure [Mail_Order%_AllowedAmount_Pharmacy].
+expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Mail Order Type Name].[Drug Handling Profile Mail Order Type Name].&[Mail Order], [Measures].[Total_AllowedAmount_Pharmacy]),
+  [Measures].[Total_AllowedAmount_Pharmacy], 0)
+format: percent

@@ -1,0 +1,6 @@
+unique_name: Total_DaysSupplyUnitCostNetpaid_Pharmacy
+object_type: metric_calc
+label: Total_DaysSupplyUnitCostNetpaid_Pharmacy
+description: Converted from DAX measure [Total_DaysSupplyUnitCostNetpaid_Pharmacy].
+expression: Divide([Measures].[Total_NetPaidAmount_Pharmacy], [Measures].[Total_DaysSupply_Pharmacy])
+format: $#,##0.00

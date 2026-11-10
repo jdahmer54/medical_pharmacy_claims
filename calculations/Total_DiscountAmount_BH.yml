@@ -1,0 +1,5 @@
+unique_name: Total_DiscountAmount_BH
+object_type: metric_calc
+label: Total_DiscountAmount_BH
+description: Converted from DAX measure [Total_DiscountAmount_BH].
+expression: '[Measures].[Total_IPADiscountAmount_BH] + [Measures].[Total_OUTDiscountAmount_BH] + [Measures].[Total_PROFDiscountAmount_BH]'

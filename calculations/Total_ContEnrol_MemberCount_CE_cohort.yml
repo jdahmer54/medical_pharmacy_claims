@@ -1,0 +1,6 @@
+unique_name: Total_ContEnrol_MemberCount_CE_cohort
+object_type: metric_calc
+label: Total_ContEnrol_MemberCount_CE_cohort
+description: Converted from DAX measure [Total_ContEnrol_MemberCount_CE_cohort].
+expression: '[Measures].[Cohort members still continuous]'
+format: general number

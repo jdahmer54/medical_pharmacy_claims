@@ -1,0 +1,5 @@
+unique_name: Total_AllowedAmount_Pharmacy
+object_type: metric_calc
+label: Total_AllowedAmount_Pharmacy
+description: Converted from DAX measure [Total_AllowedAmount_Pharmacy].
+expression: '[Measures].[Rx Provider Allowed Amount]'

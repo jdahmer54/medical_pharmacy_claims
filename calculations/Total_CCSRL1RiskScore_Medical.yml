@@ -1,0 +1,6 @@
+unique_name: Total_CCSRL1RiskScore_Medical
+object_type: metric_calc
+label: Total_CCSRL1RiskScore_Medical
+description: Converted from DAX measure [Total_CCSRL1RiskScore_Medical].
+expression: '[Measures].[Total_MedicalRisk_Disease]'
+format: standard

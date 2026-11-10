@@ -1,0 +1,6 @@
+unique_name: Total_AllowedAmount_BH
+object_type: metric_calc
+label: Total_AllowedAmount_BH
+description: Converted from DAX measure [Total_AllowedAmount_BH].
+expression: '[Measures].[Total_IPAAllowedAmount_BH] + [Measures].[Total_OUTAllowedAmount_BH] + [Measures].[Total_PROFAllowedAmount_BH]'
+format: $#,##0.00

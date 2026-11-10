@@ -1,0 +1,5 @@
+unique_name: Total_AllowedPerCCSRL1Claimants_Medical
+object_type: metric_calc
+label: Total_AllowedPerCCSRL1Claimants_Medical
+description: Converted from DAX measure [Total_AllowedPerCCSRL1Claimants_Medical].
+expression: Divide([Measures].[Total_AllowedAmount_Medical], [Measures].[Total_CCSRL1Claimants_Medical])
