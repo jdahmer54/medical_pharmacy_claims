@@ -1,8 +1,0 @@
-unique_name: Member Month Contract Size
-object_type: metric
-label: Member Month Contract Size
-description: sum of fact_mbrmonth_ca_agg.contractsize.
-calculation_method: sum
-dataset: fact_mbrmonth_ca_agg
-column: contractsize
-unrelated_dimensions_handling: repeat

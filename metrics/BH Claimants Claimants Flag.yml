@@ -1,8 +1,0 @@
-unique_name: BH Claimants Claimants Flag
-object_type: metric
-label: BH Claimants Claimants Flag
-description: sum of fact_claim_medical_bh_claimants_ca_agg.claimants_flag.
-calculation_method: sum
-dataset: fact_claim_medical_bh_claimants_ca_agg
-column: claimants_flag
-unrelated_dimensions_handling: repeat

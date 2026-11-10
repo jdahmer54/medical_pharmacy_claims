@@ -1,8 +1,0 @@
-unique_name: Rx Utilizer Count
-object_type: metric
-label: Rx Utilizer Count
-description: sum of fact_pharmclaim_ca_agg.utilizercount.
-calculation_method: sum
-dataset: fact_pharmclaim_ca_agg
-column: utilizercount
-unrelated_dimensions_handling: repeat

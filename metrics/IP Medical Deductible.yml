@@ -1,8 +1,0 @@
-unique_name: IP Medical Deductible
-object_type: metric
-label: IP Medical Deductible
-description: sum of fact_claim_medical_ipa_ca_agg.medicaldeductible.
-calculation_method: sum
-dataset: fact_claim_medical_ipa_ca_agg
-column: medicaldeductible
-unrelated_dimensions_handling: repeat

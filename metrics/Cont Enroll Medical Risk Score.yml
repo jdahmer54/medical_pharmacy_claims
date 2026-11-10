@@ -1,8 +1,0 @@
-unique_name: Cont Enroll Medical Risk Score
-object_type: metric
-label: Cont Enroll Medical Risk Score
-description: sum of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.medicalriskscore.
-calculation_method: sum
-dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
-column: medicalriskscore
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: Total_PROFClaimsPerK_Medical
-object_type: metric
-label: Total_PROFClaimsPerK_Medical
-description: sum of fact_claim_medical_prof_visitcnt_ca_agg.claimcount where claims_flag = 1.
-calculation_method: sum
-dataset: fact_claim_medical_prof_visitcnt_ca_agg
-column: claimcount_when_2
-unrelated_dimensions_handling: repeat

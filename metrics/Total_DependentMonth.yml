@@ -1,8 +1,0 @@
-unique_name: Total_DependentMonth
-object_type: metric
-label: Total_DependentMonth
-description: sum of fact_mbrmonth_ca_agg.membershipmonth where relationshipid = 3.
-calculation_method: sum
-dataset: fact_mbrmonth_ca_agg
-column: membershipmonth_when_2
-unrelated_dimensions_handling: repeat

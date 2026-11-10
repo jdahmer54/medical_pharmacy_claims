@@ -1,8 +1,0 @@
-unique_name: OP Medical Copayment
-object_type: metric
-label: OP Medical Copayment
-description: sum of fact_claim_medical_out_ca_agg.medicalcopayment.
-calculation_method: sum
-dataset: fact_claim_medical_out_ca_agg
-column: medicalcopayment
-unrelated_dimensions_handling: repeat

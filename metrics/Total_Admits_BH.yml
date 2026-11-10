@@ -1,8 +1,0 @@
-unique_name: Total_Admits_BH
-object_type: metric
-label: Total_Admits_BH
-description: sum of fact_claim_medical_bh_ipa_ca_agg.admitcount.
-calculation_method: sum
-dataset: fact_claim_medical_bh_ipa_ca_agg
-column: admitcount
-unrelated_dimensions_handling: repeat

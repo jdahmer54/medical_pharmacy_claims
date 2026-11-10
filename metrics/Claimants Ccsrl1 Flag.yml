@@ -1,8 +1,0 @@
-unique_name: Claimants Ccsrl1 Flag
-object_type: metric
-label: Claimants Ccsrl1 Flag
-description: sum of fact_claim_medical_claimants_ca_agg.ccsrl1_flag.
-calculation_method: sum
-dataset: fact_claim_medical_claimants_ca_agg
-column: ccsrl1_flag
-unrelated_dimensions_handling: repeat

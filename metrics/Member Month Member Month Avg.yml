@@ -1,8 +1,0 @@
-unique_name: Member Month Member Month Avg
-object_type: metric
-label: Member Month Member Month Avg
-description: average of fact_mbrmonth_ca_agg.membermonth.
-calculation_method: average
-dataset: fact_mbrmonth_ca_agg
-column: membermonth
-unrelated_dimensions_handling: repeat

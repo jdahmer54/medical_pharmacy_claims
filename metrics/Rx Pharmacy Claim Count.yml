@@ -1,8 +1,0 @@
-unique_name: Rx Pharmacy Claim Count
-object_type: metric
-label: Rx Pharmacy Claim Count
-description: sum of fact_pharmclaim_ca_agg.pharmacyclaimcount.
-calculation_method: sum
-dataset: fact_pharmclaim_ca_agg
-column: pharmacyclaimcount
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: BH OP Medical Coinsurance
-object_type: metric
-label: BH OP Medical Coinsurance
-description: sum of fact_claim_medical_bh_out_ca_agg.medicalcoinsurance.
-calculation_method: sum
-dataset: fact_claim_medical_bh_out_ca_agg
-column: medicalcoinsurance
-unrelated_dimensions_handling: repeat

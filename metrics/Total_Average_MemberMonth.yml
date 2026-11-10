@@ -1,8 +1,0 @@
-unique_name: Total_Average_MemberMonth
-object_type: metric
-label: Total_Average_MemberMonth
-description: average of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.membercount.
-calculation_method: average
-dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
-column: membercount
-unrelated_dimensions_handling: repeat

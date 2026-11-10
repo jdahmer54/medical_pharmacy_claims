@@ -1,8 +1,0 @@
-unique_name: Total_MaleMemberMonth
-object_type: metric
-label: Total_MaleMemberMonth
-description: sum of fact_mbrmonth_ca_agg.membershipmonth where gendercodeid = 2.
-calculation_method: sum
-dataset: fact_mbrmonth_ca_agg
-column: membershipmonth_when_5
-unrelated_dimensions_handling: repeat

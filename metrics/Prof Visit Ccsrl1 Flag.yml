@@ -1,8 +1,0 @@
-unique_name: Prof Visit Ccsrl1 Flag
-object_type: metric
-label: Prof Visit Ccsrl1 Flag
-description: sum of fact_claim_medical_prof_visitcnt_ca_agg.ccsrl1_flag.
-calculation_method: sum
-dataset: fact_claim_medical_prof_visitcnt_ca_agg
-column: ccsrl1_flag
-unrelated_dimensions_handling: repeat

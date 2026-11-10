@@ -1,8 +1,0 @@
-unique_name: Claimants claimant count
-object_type: metric
-label: Claimants claimant count
-description: sum of fact_claim_medical_claimants_ca_agg.claimant_count.
-calculation_method: sum
-dataset: fact_claim_medical_claimants_ca_agg
-column: claimant_count
-unrelated_dimensions_handling: repeat

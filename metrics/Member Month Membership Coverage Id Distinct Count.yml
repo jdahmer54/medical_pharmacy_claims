@@ -1,8 +1,0 @@
-unique_name: Member Month Membership Coverage Id Distinct Count
-object_type: metric
-label: Member Month Membership Coverage Id Distinct Count
-description: count distinct of fact_mbrmonth_ca_agg.membershipcoverageid.
-calculation_method: count distinct
-dataset: fact_mbrmonth_ca_agg
-column: membershipcoverageid
-unrelated_dimensions_handling: repeat

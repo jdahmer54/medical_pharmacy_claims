@@ -1,8 +1,0 @@
-unique_name: Prof Medical Coinsurance
-object_type: metric
-label: Prof Medical Coinsurance
-description: sum of fact_claim_medical_prof_ca_agg.medicalcoinsurance.
-calculation_method: sum
-dataset: fact_claim_medical_prof_ca_agg
-column: medicalcoinsurance
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: Total_ProfVisits_BH
-object_type: metric
-label: Total_ProfVisits_BH
-description: sum of fact_claim_medical_bh_prof_ca_agg.bhvisit.
-calculation_method: sum
-dataset: fact_claim_medical_bh_prof_ca_agg
-column: bhvisit
-unrelated_dimensions_handling: repeat

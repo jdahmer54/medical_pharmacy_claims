@@ -1,8 +1,0 @@
-unique_name: Total_PROFVisits_Medical
-object_type: metric
-label: Total_PROFVisits_Medical
-description: sum of fact_claim_medical_prof_visitcnt_ca_agg.visitcount where visits_flag = 1.
-calculation_method: sum
-dataset: fact_claim_medical_prof_visitcnt_ca_agg
-column: visitcount_when_1
-unrelated_dimensions_handling: repeat

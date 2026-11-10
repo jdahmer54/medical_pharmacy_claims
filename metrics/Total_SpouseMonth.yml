@@ -1,8 +1,0 @@
-unique_name: Total_SpouseMonth
-object_type: metric
-label: Total_SpouseMonth
-description: sum of fact_mbrmonth_ca_agg.membershipmonth where relationshipid = 1.
-calculation_method: sum
-dataset: fact_mbrmonth_ca_agg
-column: membershipmonth_when_3
-unrelated_dimensions_handling: repeat

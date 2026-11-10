@@ -1,8 +1,0 @@
-unique_name: Total_HCC_Pharmacy
-object_type: metric
-label: Total_HCC_Pharmacy
-description: sum of fact_pharmclaim_ca_agg.highcostclaimant.
-calculation_method: sum
-dataset: fact_pharmclaim_ca_agg
-column: highcostclaimant
-unrelated_dimensions_handling: repeat

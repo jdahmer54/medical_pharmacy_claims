@@ -1,8 +1,0 @@
-unique_name: BH Prof Bh Hours
-object_type: metric
-label: BH Prof Bh Hours
-description: sum of fact_claim_medical_bh_prof_ca_agg.bhhours.
-calculation_method: sum
-dataset: fact_claim_medical_bh_prof_ca_agg
-column: bhhours
-unrelated_dimensions_handling: repeat

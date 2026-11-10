@@ -1,8 +1,0 @@
-unique_name: Cont Enroll Member Count
-object_type: metric
-label: Cont Enroll Member Count
-description: sum of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.membercount.
-calculation_method: sum
-dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
-column: membercount
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: Cont Enroll Net Paid Amount
-object_type: metric
-label: Cont Enroll Net Paid Amount
-description: sum of fact_claim_medical_continuous_enrollment_allmonths_ca_agg.runout_net_pd_amt.
-calculation_method: sum
-dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
-column: runout_net_pd_amt
-unrelated_dimensions_handling: repeat

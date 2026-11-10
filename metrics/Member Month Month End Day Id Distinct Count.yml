@@ -1,8 +1,0 @@
-unique_name: Member Month Month End Day Id Distinct Count
-object_type: metric
-label: Member Month Month End Day Id Distinct Count
-description: count distinct of fact_mbrmonth_ca_agg.monthenddayid.
-calculation_method: count distinct
-dataset: fact_mbrmonth_ca_agg
-column: monthenddayid
-unrelated_dimensions_handling: repeat

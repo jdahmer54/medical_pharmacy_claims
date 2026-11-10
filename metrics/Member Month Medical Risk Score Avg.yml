@@ -1,8 +1,0 @@
-unique_name: Member Month Medical Risk Score Avg
-object_type: metric
-label: Member Month Medical Risk Score Avg
-description: average of fact_mbrmonth_ca_agg.medicalriskscore.
-calculation_method: average
-dataset: fact_mbrmonth_ca_agg
-column: medicalriskscore
-unrelated_dimensions_handling: repeat
