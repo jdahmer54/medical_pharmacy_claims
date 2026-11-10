@@ -1,0 +1,20 @@
+unique_name: Anchor Date Dimension
+object_type: dimension
+label: Anchor Date Dimension
+description: Anchor Date (from Power BI table 'Bridge_AnchorDate').
+type: standard
+hierarchies:
+- unique_name: Anchor Date Hierarchy
+  label: Anchor Date Hierarchy
+  folder: Anchor Date
+  levels:
+  - unique_name: Anchor Date
+level_attributes:
+- unique_name: Anchor Date
+  label: Anchor Date
+  description: Anchor Date (bridge_anchordate_ca.anchordate).
+  dataset: bridge_anchordate_ca
+  name_column: anchordate
+  key_columns:
+  - anchordayid
+  sort_column: anchordate

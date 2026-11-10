@@ -1,0 +1,13 @@
+unique_name: dim_mbr_charc
+object_type: dataset
+label: dim_mbr_charc
+description: analytics_mee_uat_silver.dim_mbr_charc (Power BI table 'Dim_MemberChar').
+connection_id: Connection - Claims Experience
+table: dim_mbr_charc
+columns:
+- name: empstatus
+  data_type: string
+- name: empstatusval
+  data_type: string
+- name: empstatuscd
+  data_type: long

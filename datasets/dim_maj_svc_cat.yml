@@ -1,0 +1,29 @@
+unique_name: dim_maj_svc_cat
+object_type: dataset
+label: dim_maj_svc_cat
+description: analytics_mee_uat_silver.dim_maj_svc_cat (Power BI table 'Dim_MajorServiceCategory').
+connection_id: Connection - Claims Experience
+table: dim_maj_svc_cat
+columns:
+- name: maj_svc_cat_id
+  data_type: long
+- name: maj_svc_cat_cd
+  data_type: string
+- name: maj_svc_cat_desc
+  data_type: string
+- name: svc_cat_cd
+  data_type: string
+- name: svc_cat_desc
+  data_type: string
+- name: acute_ind
+  data_type: string
+- name: maj_svc_cat_grp_nm
+  data_type: string
+- name: maj_svc_cat_cls_nm
+  data_type: string
+- name: derv_svc_cat_cd
+  data_type: string
+- name: derv_svc_cat_desc
+  data_type: string
+- name: servicecategorytype
+  data_type: string

@@ -1,0 +1,26 @@
+unique_name: bridge_date_ca
+object_type: dataset
+label: bridge_date_ca
+description: analytics_mee_uat_silver.bridge_date_ca (Power BI table 'Bridge_Date').
+connection_id: Connection - Claims Experience
+table: bridge_date_ca
+columns:
+- name: asofmonthenddayid
+  data_type: long
+- name: asofmonthenddate
+  data_type: datetime
+- name: year_num
+  data_type: long
+  sql: year(asofmonthenddate)
+- name: quarter_key
+  data_type: long
+  sql: year(asofmonthenddate) * 10 + quarter(asofmonthenddate)
+- name: quarter_name
+  data_type: string
+  sql: concat('Q', quarter(asofmonthenddate), ' ', year(asofmonthenddate))
+- name: month_name
+  data_type: string
+  sql: date_format(asofmonthenddate, 'MMM yyyy')
+- name: month_of_year
+  data_type: long
+  sql: month(asofmonthenddate)

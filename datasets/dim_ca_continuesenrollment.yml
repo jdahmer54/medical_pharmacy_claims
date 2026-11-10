@@ -1,0 +1,11 @@
+unique_name: dim_ca_continuesenrollment
+object_type: dataset
+label: dim_ca_continuesenrollment
+description: analytics_mee_uat_silver.dim_ca_continuesenrollment (Power BI table 'Dim_ContinuesEnrollment').
+connection_id: Connection - Claims Experience
+table: dim_ca_continuesenrollment
+columns:
+- name: continuesenrollmentid
+  data_type: long
+- name: continuesenrollment
+  data_type: string

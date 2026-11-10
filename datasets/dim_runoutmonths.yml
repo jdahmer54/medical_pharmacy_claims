@@ -1,0 +1,9 @@
+unique_name: dim_runoutmonths
+object_type: dataset
+label: dim_runoutmonths
+description: analytics_mee_uat_silver.dim_runoutmonths (Power BI table 'Dim_Runoutmonths').
+connection_id: Connection - Claims Experience
+table: dim_runoutmonths
+columns:
+- name: runoutmonths
+  data_type: long

@@ -1,0 +1,25 @@
+unique_name: dim_prod
+object_type: dataset
+label: dim_prod
+description: analytics_mee_uat_silver.dim_prod (Power BI table 'Dim_Product').
+connection_id: Connection - Claims Experience
+table: dim_prod
+columns:
+- name: prod_id
+  data_type: long
+- name: hlth_pln_prod_typ_nm
+  data_type: string
+- name: prod_cd
+  data_type: string
+- name: prod_desc
+  data_type: string
+- name: prod_typ_cd
+  data_type: string
+- name: src_prod_nm
+  data_type: string
+- name: ins_typ_cd
+  data_type: string
+- name: aca_ind
+  data_type: string
+- name: pln_nm
+  data_type: string

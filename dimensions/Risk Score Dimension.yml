@@ -1,0 +1,20 @@
+unique_name: Risk Score Dimension
+object_type: dimension
+label: Risk Score Dimension
+description: Risk Score (from Power BI table 'Dim_RiskScore').
+type: standard
+hierarchies:
+- unique_name: Risk Score Hierarchy
+  label: Risk Score Hierarchy
+  folder: Risk Score
+  levels:
+  - unique_name: Risk Score
+level_attributes:
+- unique_name: Risk Score
+  label: Risk Score
+  description: Risk Score (dim_riskscore_code.riskscore_name).
+  dataset: dim_riskscore_code
+  name_column: riskscore_name
+  key_columns:
+  - riskscore_id
+  sort_column: riskscore_name

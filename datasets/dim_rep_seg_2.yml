@@ -1,0 +1,11 @@
+unique_name: dim_rep_seg_2
+object_type: dataset
+label: dim_rep_seg_2
+description: analytics_mee_uat_silver.dim_rep_seg_2 (Power BI table 'Dim_ReportingSegment2').
+connection_id: Connection - Claims Experience
+table: dim_rep_seg_2
+columns:
+- name: rpt_splt_id
+  data_type: long
+- name: rpt_splt_nm
+  data_type: string

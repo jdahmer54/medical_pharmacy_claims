@@ -1,0 +1,41 @@
+unique_name: dim_drug
+object_type: dataset
+label: dim_drug
+description: analytics_mee_uat_silver.dim_drug (Power BI table 'dim_drug').
+connection_id: Connection - Claims Experience
+table: dim_drug
+columns:
+- name: drug_id
+  data_type: long
+- name: gpi_nbr
+  data_type: string
+- name: drug_genrc_nm
+  data_type: string
+- name: drug_nm
+  data_type: string
+- name: ahfs_tdg_cd
+  data_type: string
+- name: drug_core_cls_desc
+  data_type: string
+- name: drug_typ_cd
+  data_type: string
+- name: spclty_drug_ind
+  data_type: string
+- name: mod_drug_core_cls_desc
+  data_type: string
+- name: gpi_thrptc_drug_grp_cd
+  data_type: string
+- name: gpi_thrptc_drug_grp_nm
+  data_type: string
+- name: gpi_thrptc_drug_cls_cd
+  data_type: string
+- name: gpi_thrptc_drug_cls_nm
+  data_type: string
+- name: gpi_thrptc_drug_sub_cls_cd
+  data_type: string
+- name: gpi_thrptc_drug_sub_cls_nm
+  data_type: string
+- name: gpi_thrptc_drug_nm_cd
+  data_type: string
+- name: gpi_thrptc_drug_nm
+  data_type: string

@@ -1,0 +1,20 @@
+unique_name: Member Lifestage Dimension
+object_type: dimension
+label: Member Lifestage Dimension
+description: Member Lifestage (from Power BI table 'Dim_MemberLifestage').
+type: standard
+hierarchies:
+- unique_name: Member Lifestage Hierarchy
+  label: Member Lifestage Hierarchy
+  folder: Member Lifestage
+  levels:
+  - unique_name: Member Lifestage
+level_attributes:
+- unique_name: Member Lifestage
+  label: Member Lifestage
+  description: Member Lifestage (dim_age_code.lifestage).
+  dataset: dim_age_code
+  name_column: lifestage
+  key_columns:
+  - ageid
+  sort_column: lifestage

@@ -1,0 +1,72 @@
+unique_name: Membership Coverage Dimension
+object_type: dimension
+label: Membership Coverage Dimension
+description: Membership Coverage (from Power BI table 'Dim_MembershipCoverage').
+type: standard
+hierarchies:
+- unique_name: Membership Coverage Hierarchy
+  label: Membership Coverage Hierarchy
+  folder: Membership Coverage
+  levels:
+  - unique_name: Membership Coverage
+    secondary_attributes:
+    - unique_name: Membership Coverage Dental Indicator
+      label: Membership Coverage Dental Indicator
+      description: dim_mbrshp_covrg.dent_ind
+      dataset: dim_mbrshp_covrg
+      folder: Membership Coverage
+      key_columns:
+      - dent_ind
+      name_column: dent_ind
+      sort_column: dent_ind
+    - unique_name: Membership Coverage Vision Indicator
+      label: Membership Coverage Vision Indicator
+      description: dim_mbrshp_covrg.vsn_ind
+      dataset: dim_mbrshp_covrg
+      folder: Membership Coverage
+      key_columns:
+      - vsn_ind
+      name_column: vsn_ind
+      sort_column: vsn_ind
+    - unique_name: Membership Coverage Family Indicator
+      label: Membership Coverage Family Indicator
+      description: dim_mbrshp_covrg.fam_ind
+      dataset: dim_mbrshp_covrg
+      folder: Membership Coverage
+      key_columns:
+      - fam_ind
+      name_column: fam_ind
+      sort_column: fam_ind
+- unique_name: Membership Coverage Medical Indicator
+  label: Membership Coverage Medical Indicator
+  folder: Membership Coverage
+  levels:
+  - unique_name: Membership Coverage Medical Indicator
+- unique_name: Membership Coverage Drug Indicator
+  label: Membership Coverage Drug Indicator
+  folder: Membership Coverage
+  levels:
+  - unique_name: Membership Coverage Drug Indicator
+level_attributes:
+- unique_name: Membership Coverage
+  label: Membership Coverage
+  description: Membership Coverage (dim_mbrshp_covrg.mbrshp_covrg_id).
+  dataset: dim_mbrshp_covrg
+  name_column: mbrshp_covrg_id
+  key_columns:
+  - mbrshp_covrg_id
+  sort_column: mbrshp_covrg_id
+- unique_name: Membership Coverage Medical Indicator
+  label: Membership Coverage Medical Indicator
+  dataset: dim_mbrshp_covrg
+  name_column: med_ind
+  key_columns:
+  - med_ind
+  sort_column: med_ind
+- unique_name: Membership Coverage Drug Indicator
+  label: Membership Coverage Drug Indicator
+  dataset: dim_mbrshp_covrg
+  name_column: drug_ind
+  key_columns:
+  - drug_ind
+  sort_column: drug_ind

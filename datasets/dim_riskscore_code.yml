@@ -1,0 +1,11 @@
+unique_name: dim_riskscore_code
+object_type: dataset
+label: dim_riskscore_code
+description: analytics_mee_uat_silver.dim_riskscore_code (Power BI table 'Dim_RiskScore').
+connection_id: Connection - Claims Experience
+table: dim_riskscore_code
+columns:
+- name: riskscore_id
+  data_type: long
+- name: riskscore_name
+  data_type: string

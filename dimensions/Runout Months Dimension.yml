@@ -1,0 +1,20 @@
+unique_name: Runout Months Dimension
+object_type: dimension
+label: Runout Months Dimension
+description: Runout Months (from Power BI table 'Dim_Runoutmonths').
+type: standard
+hierarchies:
+- unique_name: Runout Months Hierarchy
+  label: Runout Months Hierarchy
+  folder: Runout Months
+  levels:
+  - unique_name: Runout Months
+level_attributes:
+- unique_name: Runout Months
+  label: Runout Months
+  description: Runout Months (dim_runoutmonths.runoutmonths).
+  dataset: dim_runoutmonths
+  name_column: runoutmonths
+  key_columns:
+  - runoutmonths
+  sort_column: runoutmonths

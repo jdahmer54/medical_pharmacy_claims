@@ -1,0 +1,82 @@
+unique_name: fact_claim_medical_bh_claimants_ca_agg
+object_type: dataset
+label: fact_claim_medical_bh_claimants_ca_agg
+description: analytics_mee_uat_silver.fact_claim_medical_bh_claimants_ca_agg (Power BI table 'fact_claim_medical_bh_claimants_ca_agg').
+connection_id: Connection - Claims Experience
+table: fact_claim_medical_bh_claimants_ca_agg
+columns:
+- name: periodrange
+  data_type: string
+- name: runout
+  data_type: long
+- name: anchordayid
+  data_type: long
+- name: majordiagnosiscategoryid
+  data_type: long
+- name: corporateentityid
+  data_type: long
+- name: lineofbusinessid
+  data_type: long
+- name: networkid
+  data_type: long
+- name: fundingtypeid
+  data_type: long
+- name: marketsegmentid
+  data_type: long
+- name: productid
+  data_type: long
+- name: accountid
+  data_type: long
+- name: majorservicecategoryid
+  data_type: long
+- name: contractstatusid
+  data_type: long
+- name: gendercodeid
+  data_type: long
+- name: ccsrdiagrk
+  data_type: long
+- name: ccsrl1
+  data_type: string
+- name: ageid
+  data_type: long
+- name: relationshipid
+  data_type: long
+- name: riskscoreid
+  data_type: long
+- name: groupsectionid
+  data_type: long
+- name: highcostclaimant
+  data_type: long
+- name: statefileid
+  data_type: long
+- name: employeestatuscode
+  data_type: long
+- name: provstateid
+  data_type: long
+- name: rpt_segm1
+  data_type: long
+- name: rpt_segm2
+  data_type: long
+- name: claimant_count
+  data_type: long
+- name: medicalriskscore
+  data_type: double
+- name: enrollment
+  data_type: long
+- name: ccsrl2_flag
+  data_type: long
+- name: ccsrl1_flag
+  data_type: long
+- name: claimants_flag
+  data_type: long
+- name: mee_secty_cd
+  data_type: long
+- name: claimant_count_when_1
+  data_type: long
+  sql: CASE WHEN ccsrl1_flag = 1 THEN claimant_count END
+- name: claimant_count_when_2
+  data_type: long
+  sql: CASE WHEN ccsrl2_flag = 1 THEN claimant_count END
+- name: claimant_count_when_3
+  data_type: long
+  sql: CASE WHEN claimants_flag = 1 THEN claimant_count END

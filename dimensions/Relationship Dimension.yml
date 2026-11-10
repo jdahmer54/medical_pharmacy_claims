@@ -1,0 +1,20 @@
+unique_name: Relationship Dimension
+object_type: dimension
+label: Relationship Dimension
+description: Relationship (from Power BI table 'Dim_Relationship').
+type: standard
+hierarchies:
+- unique_name: Relationship Hierarchy
+  label: Relationship Hierarchy
+  folder: Relationship
+  levels:
+  - unique_name: Relationship
+level_attributes:
+- unique_name: Relationship
+  label: Relationship
+  description: Relationship (dim_relation_code.relationshipname).
+  dataset: dim_relation_code
+  name_column: relationshipname
+  key_columns:
+  - relationship_id
+  sort_column: relationshipname

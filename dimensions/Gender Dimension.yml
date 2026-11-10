@@ -1,0 +1,30 @@
+unique_name: Gender Dimension
+object_type: dimension
+label: Gender Dimension
+description: Gender (from Power BI table 'Dim_Gender').
+type: standard
+hierarchies:
+- unique_name: Gender Hierarchy
+  label: Gender Hierarchy
+  folder: Gender
+  levels:
+  - unique_name: Gender
+    secondary_attributes:
+    - unique_name: Gender Code Name
+      label: Gender Code Name
+      description: dim_gender_code.gendercodename
+      dataset: dim_gender_code
+      folder: Gender
+      key_columns:
+      - gendercodename
+      name_column: gendercodename
+      sort_column: gendercodename
+level_attributes:
+- unique_name: Gender
+  label: Gender
+  description: Gender (dim_gender_code.gender).
+  dataset: dim_gender_code
+  name_column: gender
+  key_columns:
+  - gendercodeid
+  sort_column: gender

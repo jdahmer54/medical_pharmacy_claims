@@ -1,0 +1,13 @@
+unique_name: dim_gender_code
+object_type: dataset
+label: dim_gender_code
+description: analytics_mee_uat_silver.dim_gender_code (Power BI table 'Dim_Gender').
+connection_id: Connection - Claims Experience
+table: dim_gender_code
+columns:
+- name: gendercodeid
+  data_type: long
+- name: gendercodename
+  data_type: string
+- name: gender
+  data_type: string

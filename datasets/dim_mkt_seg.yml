@@ -1,0 +1,15 @@
+unique_name: dim_mkt_seg
+object_type: dataset
+label: dim_mkt_seg
+description: analytics_mee_uat_silver.dim_mkt_seg (Power BI table 'Dim_MarketSegment').
+connection_id: Connection - Claims Experience
+table: dim_mkt_seg
+columns:
+- name: mkt_seg_cd_id
+  data_type: long
+- name: mkt_seg_cd
+  data_type: string
+- name: mkt_seg_desc
+  data_type: string
+- name: corp_ent_cd
+  data_type: string

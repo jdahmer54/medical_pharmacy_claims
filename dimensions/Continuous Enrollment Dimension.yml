@@ -1,0 +1,20 @@
+unique_name: Continuous Enrollment Dimension
+object_type: dimension
+label: Continuous Enrollment Dimension
+description: Continuous Enrollment (from Power BI table 'Dim_ContinuesEnrollment').
+type: standard
+hierarchies:
+- unique_name: Continuous Enrollment Hierarchy
+  label: Continuous Enrollment Hierarchy
+  folder: Continuous Enrollment
+  levels:
+  - unique_name: Continuous Enrollment
+level_attributes:
+- unique_name: Continuous Enrollment
+  label: Continuous Enrollment
+  description: Continuous Enrollment (dim_ca_continuesenrollment.continuesenrollment).
+  dataset: dim_ca_continuesenrollment
+  name_column: continuesenrollment
+  key_columns:
+  - continuesenrollmentid
+  sort_column: continuesenrollment

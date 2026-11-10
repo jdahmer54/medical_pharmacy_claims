@@ -1,0 +1,30 @@
+unique_name: Corporate Entity Dimension
+object_type: dimension
+label: Corporate Entity Dimension
+description: Corporate Entity (from Power BI table 'Dim_CorpEntityCode').
+type: standard
+hierarchies:
+- unique_name: Corporate Entity Hierarchy
+  label: Corporate Entity Hierarchy
+  folder: Corporate Entity
+  levels:
+  - unique_name: Corporate Entity
+    secondary_attributes:
+    - unique_name: Corporate Entity Code
+      label: Corporate Entity Code
+      description: dim_corp_ent.corp_ent_cd
+      dataset: dim_corp_ent
+      folder: Corporate Entity
+      key_columns:
+      - corp_ent_cd
+      name_column: corp_ent_cd
+      sort_column: corp_ent_cd
+level_attributes:
+- unique_name: Corporate Entity
+  label: Corporate Entity
+  description: Corporate Entity (dim_corp_ent.corp_ent_desc).
+  dataset: dim_corp_ent
+  name_column: corp_ent_desc
+  key_columns:
+  - corp_ent_id
+  sort_column: corp_ent_desc

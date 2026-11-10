@@ -1,0 +1,25 @@
+unique_name: dim_acct
+object_type: dataset
+label: dim_acct
+description: analytics_mee_uat_silver.dim_acct (Power BI table 'Dim_Account').
+connection_id: Connection - Claims Experience
+table: dim_acct
+columns:
+- name: acct_id
+  data_type: long
+- name: acct_nbr
+  data_type: string
+- name: acct_nm
+  data_type: string
+- name: corp_ent_cd
+  data_type: string
+- name: fep_ind
+  data_type: string
+- name: dw_acc_cd
+  data_type: string
+- name: st_nm
+  data_type: string
+- name: src_sys_nm
+  data_type: string
+- name: mee_secty_cd
+  data_type: long

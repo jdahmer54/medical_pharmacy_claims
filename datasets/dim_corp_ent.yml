@@ -1,0 +1,13 @@
+unique_name: dim_corp_ent
+object_type: dataset
+label: dim_corp_ent
+description: analytics_mee_uat_silver.dim_corp_ent (Power BI table 'Dim_CorpEntityCode').
+connection_id: Connection - Claims Experience
+table: dim_corp_ent
+columns:
+- name: corp_ent_id
+  data_type: long
+- name: corp_ent_cd
+  data_type: string
+- name: corp_ent_desc
+  data_type: string

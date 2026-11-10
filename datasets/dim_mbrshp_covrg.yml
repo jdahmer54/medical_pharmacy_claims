@@ -1,0 +1,19 @@
+unique_name: dim_mbrshp_covrg
+object_type: dataset
+label: dim_mbrshp_covrg
+description: analytics_mee_uat_silver.dim_mbrshp_covrg (Power BI table 'Dim_MembershipCoverage').
+connection_id: Connection - Claims Experience
+table: dim_mbrshp_covrg
+columns:
+- name: mbrshp_covrg_id
+  data_type: long
+- name: med_ind
+  data_type: string
+- name: dent_ind
+  data_type: string
+- name: drug_ind
+  data_type: string
+- name: vsn_ind
+  data_type: string
+- name: fam_ind
+  data_type: string

@@ -1,0 +1,15 @@
+unique_name: dim_drug_hndlg_prfl
+object_type: dataset
+label: dim_drug_hndlg_prfl
+description: analytics_mee_uat_silver.dim_drug_hndlg_prfl (Power BI table 'Dim_DrugHandlingProfile').
+connection_id: Connection - Claims Experience
+table: dim_drug_hndlg_prfl
+columns:
+- name: drug_hndlg_prfl_id
+  data_type: long
+- name: mail_ord_typ_nm
+  data_type: string
+- name: frmlry_ind
+  data_type: string
+- name: frmlry_drug_typ_nm
+  data_type: string

@@ -1,0 +1,65 @@
+unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+object_type: dataset
+label: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+description: analytics_mee_uat_silver.fact_claim_medical_continuous_cohort_allmonths_ca_agg (Power BI table 'Fact_MedClaim_Continuous_Cohort_Agg').
+connection_id: Connection - Claims Experience
+table: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+columns:
+- name: periodrange
+  data_type: string
+- name: runout
+  data_type: long
+- name: period_label
+  data_type: string
+- name: cohort_anchor_date
+  data_type: datetime
+- name: monthenddayid
+  data_type: long
+- name: monthenddate
+  data_type: datetime
+- name: acct_nbr
+  data_type: string
+- name: acct_nm
+  data_type: string
+- name: accountid
+  data_type: long
+- name: corporateentityid
+  data_type: long
+- name: statefileid
+  data_type: long
+- name: lineofbusinessid
+  data_type: long
+- name: networkid
+  data_type: long
+- name: fundingtypeid
+  data_type: long
+- name: marketsegmentid
+  data_type: long
+- name: membershipcoverageid
+  data_type: long
+- name: productid
+  data_type: long
+- name: gendercodeid
+  data_type: long
+- name: ageid
+  data_type: long
+- name: relationshipid
+  data_type: long
+- name: riskscoreid
+  data_type: long
+- name: groupsectionid
+  data_type: long
+- name: highcostclaimant
+  data_type: long
+- name: employeestatuscode
+  data_type: long
+- name: rpt_segm1
+  data_type: long
+- name: rpt_segm2
+  data_type: long
+- name: cohort_size
+  data_type: long
+- name: members_still_continuous
+  data_type: long
+- name: mee_secty_cd
+  data_type: long

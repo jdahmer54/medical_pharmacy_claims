@@ -1,0 +1,56 @@
+unique_name: Drug Handling Profile Dimension
+object_type: dimension
+label: Drug Handling Profile Dimension
+description: Drug Handling Profile (from Power BI table 'Dim_DrugHandlingProfile').
+type: standard
+hierarchies:
+- unique_name: Drug Handling Profile Hierarchy
+  label: Drug Handling Profile Hierarchy
+  folder: Drug Handling Profile
+  levels:
+  - unique_name: Drug Handling Profile
+- unique_name: Drug Handling Profile Mail Order Type Name
+  label: Drug Handling Profile Mail Order Type Name
+  folder: Drug Handling Profile
+  levels:
+  - unique_name: Drug Handling Profile Mail Order Type Name
+- unique_name: Drug Handling Profile Formulary Indicator
+  label: Drug Handling Profile Formulary Indicator
+  folder: Drug Handling Profile
+  levels:
+  - unique_name: Drug Handling Profile Formulary Indicator
+- unique_name: Drug Handling Profile Formulary Drug Type Name
+  label: Drug Handling Profile Formulary Drug Type Name
+  folder: Drug Handling Profile
+  levels:
+  - unique_name: Drug Handling Profile Formulary Drug Type Name
+level_attributes:
+- unique_name: Drug Handling Profile
+  label: Drug Handling Profile
+  description: Drug Handling Profile (dim_drug_hndlg_prfl.drug_hndlg_prfl_id).
+  dataset: dim_drug_hndlg_prfl
+  name_column: drug_hndlg_prfl_id
+  key_columns:
+  - drug_hndlg_prfl_id
+  sort_column: drug_hndlg_prfl_id
+- unique_name: Drug Handling Profile Mail Order Type Name
+  label: Drug Handling Profile Mail Order Type Name
+  dataset: dim_drug_hndlg_prfl
+  name_column: mail_ord_typ_nm
+  key_columns:
+  - mail_ord_typ_nm
+  sort_column: mail_ord_typ_nm
+- unique_name: Drug Handling Profile Formulary Indicator
+  label: Drug Handling Profile Formulary Indicator
+  dataset: dim_drug_hndlg_prfl
+  name_column: frmlry_ind
+  key_columns:
+  - frmlry_ind
+  sort_column: frmlry_ind
+- unique_name: Drug Handling Profile Formulary Drug Type Name
+  label: Drug Handling Profile Formulary Drug Type Name
+  dataset: dim_drug_hndlg_prfl
+  name_column: frmlry_drug_typ_nm
+  key_columns:
+  - frmlry_drug_typ_nm
+  sort_column: frmlry_drug_typ_nm

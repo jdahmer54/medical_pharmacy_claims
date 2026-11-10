@@ -1,0 +1,20 @@
+unique_name: Reporting Segment 1 Dimension
+object_type: dimension
+label: Reporting Segment 1 Dimension
+description: Reporting Segment 1 (from Power BI table 'Dim_ReportingSegment1').
+type: standard
+hierarchies:
+- unique_name: Reporting Segment 1 Hierarchy
+  label: Reporting Segment 1 Hierarchy
+  folder: Reporting Segment 1
+  levels:
+  - unique_name: Reporting Segment 1
+level_attributes:
+- unique_name: Reporting Segment 1
+  label: Reporting Segment 1
+  description: Reporting Segment 1 (dim_rep_seg.rpt_splt_nm).
+  dataset: dim_rep_seg
+  name_column: rpt_splt_nm
+  key_columns:
+  - rpt_splt_id
+  sort_column: rpt_splt_nm

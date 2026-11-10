@@ -1,0 +1,32 @@
+unique_name: Contract Status Dimension
+object_type: dimension
+label: Contract Status Dimension
+description: Contract Status (from Power BI table 'Dim_ContractStatuss').
+type: standard
+hierarchies:
+- unique_name: Contract Status Hierarchy
+  label: Contract Status Hierarchy
+  folder: Contract Status
+  levels:
+  - unique_name: Contract Status
+- unique_name: Contract Status Code
+  label: Contract Status Code
+  folder: Contract Status
+  levels:
+  - unique_name: Contract Status Code
+level_attributes:
+- unique_name: Contract Status
+  label: Contract Status
+  description: Contract Status (dim_contr_sta.contr_sta_desc).
+  dataset: dim_contr_sta
+  name_column: contr_sta_desc
+  key_columns:
+  - contr_sta_id
+  sort_column: contr_sta_desc
+- unique_name: Contract Status Code
+  label: Contract Status Code
+  dataset: dim_contr_sta
+  name_column: contr_sta_cd
+  key_columns:
+  - contr_sta_cd
+  sort_column: contr_sta_cd

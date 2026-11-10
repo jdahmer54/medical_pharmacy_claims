@@ -1,0 +1,25 @@
+unique_name: dim_grp_sect
+object_type: dataset
+label: dim_grp_sect
+description: analytics_mee_uat_silver.dim_grp_sect (Power BI table 'Dim_GroupSection').
+connection_id: Connection - Claims Experience
+table: dim_grp_sect
+columns:
+- name: grp_sect_id
+  data_type: long
+- name: grp_nbr
+  data_type: string
+- name: grp_nm
+  data_type: string
+- name: corp_ent_cd
+  data_type: string
+- name: sect_nbr
+  data_type: string
+- name: alph_pfx_cd
+  data_type: string
+- name: st_nm
+  data_type: string
+- name: grp_usr_dsply_nbr
+  data_type: string
+- name: sect_usr_dsply_nbr
+  data_type: string

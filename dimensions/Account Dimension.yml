@@ -1,0 +1,92 @@
+unique_name: Account Dimension
+object_type: dimension
+label: Account Dimension
+description: Account (from Power BI table 'Dim_Account').
+type: standard
+hierarchies:
+- unique_name: Account Hierarchy
+  label: Account Hierarchy
+  folder: Account
+  levels:
+  - unique_name: Account
+- unique_name: Account Number
+  label: Account Number
+  folder: Account
+  levels:
+  - unique_name: Account Number
+- unique_name: Account Corporate Entity Code
+  label: Account Corporate Entity Code
+  folder: Account
+  levels:
+  - unique_name: Account Corporate Entity Code
+- unique_name: Account Federal Employee Program Indicator
+  label: Account Federal Employee Program Indicator
+  folder: Account
+  levels:
+  - unique_name: Account Federal Employee Program Indicator
+- unique_name: Account DWAccess Code
+  label: Account DWAccess Code
+  folder: Account
+  levels:
+  - unique_name: Account DWAccess Code
+- unique_name: Account State Name
+  label: Account State Name
+  folder: Account
+  levels:
+  - unique_name: Account State Name
+- unique_name: Account Source System Name
+  label: Account Source System Name
+  folder: Account
+  levels:
+  - unique_name: Account Source System Name
+level_attributes:
+- unique_name: Account
+  label: Account
+  description: Account (dim_acct.acct_nm).
+  dataset: dim_acct
+  name_column: acct_nm
+  key_columns:
+  - acct_id
+  sort_column: acct_nm
+- unique_name: Account Number
+  label: Account Number
+  dataset: dim_acct
+  name_column: acct_nbr
+  key_columns:
+  - acct_nbr
+  sort_column: acct_nbr
+- unique_name: Account Corporate Entity Code
+  label: Account Corporate Entity Code
+  dataset: dim_acct
+  name_column: corp_ent_cd
+  key_columns:
+  - corp_ent_cd
+  sort_column: corp_ent_cd
+- unique_name: Account Federal Employee Program Indicator
+  label: Account Federal Employee Program Indicator
+  dataset: dim_acct
+  name_column: fep_ind
+  key_columns:
+  - fep_ind
+  sort_column: fep_ind
+- unique_name: Account DWAccess Code
+  label: Account DWAccess Code
+  dataset: dim_acct
+  name_column: dw_acc_cd
+  key_columns:
+  - dw_acc_cd
+  sort_column: dw_acc_cd
+- unique_name: Account State Name
+  label: Account State Name
+  dataset: dim_acct
+  name_column: st_nm
+  key_columns:
+  - st_nm
+  sort_column: st_nm
+- unique_name: Account Source System Name
+  label: Account Source System Name
+  dataset: dim_acct
+  name_column: src_sys_nm
+  key_columns:
+  - src_sys_nm
+  sort_column: src_sys_nm

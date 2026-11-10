@@ -1,0 +1,7 @@
+unique_name: medical_pharmacy_claims_experience_catalog
+object_type: catalog
+label: Medical & Pharmacy Claims Experience
+description: Employer-group medical, pharmacy, behavioral-health and membership experience reporting, converted from a Power BI (DirectLake) semantic model.
+version: 1.7
+aggressive_agg_promotion: false
+build_speculative_aggs: false

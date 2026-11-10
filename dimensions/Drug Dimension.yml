@@ -1,0 +1,159 @@
+unique_name: Drug Dimension
+object_type: dimension
+label: Drug Dimension
+description: Drug (from Power BI table 'dim_drug').
+type: standard
+hierarchies:
+- unique_name: Drug Hierarchy
+  label: Drug Hierarchy
+  folder: Drug
+  levels:
+  - unique_name: Drug
+    secondary_attributes:
+    - unique_name: Drug GPINumber
+      label: Drug GPINumber
+      description: dim_drug.gpi_nbr
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_nbr
+      name_column: gpi_nbr
+      sort_column: gpi_nbr
+    - unique_name: Drug Generic Name
+      label: Drug Generic Name
+      description: dim_drug.drug_genrc_nm
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - drug_genrc_nm
+      name_column: drug_genrc_nm
+      sort_column: drug_genrc_nm
+    - unique_name: Drug AHFSTherapeutic Drug Group Code
+      label: Drug AHFSTherapeutic Drug Group Code
+      description: dim_drug.ahfs_tdg_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - ahfs_tdg_cd
+      name_column: ahfs_tdg_cd
+      sort_column: ahfs_tdg_cd
+    - unique_name: Drug Core Class Description
+      label: Drug Core Class Description
+      description: dim_drug.drug_core_cls_desc
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - drug_core_cls_desc
+      name_column: drug_core_cls_desc
+      sort_column: drug_core_cls_desc
+    - unique_name: Drug Type Code
+      label: Drug Type Code
+      description: dim_drug.drug_typ_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - drug_typ_cd
+      name_column: drug_typ_cd
+      sort_column: drug_typ_cd
+    - unique_name: Drug Modified Drug Core Class Description
+      label: Drug Modified Drug Core Class Description
+      description: dim_drug.mod_drug_core_cls_desc
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - mod_drug_core_cls_desc
+      name_column: mod_drug_core_cls_desc
+      sort_column: mod_drug_core_cls_desc
+    - unique_name: Drug gpi thrptc drug grp cd
+      label: Drug gpi thrptc drug grp cd
+      description: dim_drug.gpi_thrptc_drug_grp_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_grp_cd
+      name_column: gpi_thrptc_drug_grp_cd
+      sort_column: gpi_thrptc_drug_grp_cd
+    - unique_name: Drug gpi thrptc drug grp nm
+      label: Drug gpi thrptc drug grp nm
+      description: dim_drug.gpi_thrptc_drug_grp_nm
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_grp_nm
+      name_column: gpi_thrptc_drug_grp_nm
+      sort_column: gpi_thrptc_drug_grp_nm
+    - unique_name: Drug gpi thrptc drug cls cd
+      label: Drug gpi thrptc drug cls cd
+      description: dim_drug.gpi_thrptc_drug_cls_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_cls_cd
+      name_column: gpi_thrptc_drug_cls_cd
+      sort_column: gpi_thrptc_drug_cls_cd
+    - unique_name: Drug gpi thrptc drug cls nm
+      label: Drug gpi thrptc drug cls nm
+      description: dim_drug.gpi_thrptc_drug_cls_nm
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_cls_nm
+      name_column: gpi_thrptc_drug_cls_nm
+      sort_column: gpi_thrptc_drug_cls_nm
+    - unique_name: Drug gpi thrptc drug sub cls cd
+      label: Drug gpi thrptc drug sub cls cd
+      description: dim_drug.gpi_thrptc_drug_sub_cls_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_sub_cls_cd
+      name_column: gpi_thrptc_drug_sub_cls_cd
+      sort_column: gpi_thrptc_drug_sub_cls_cd
+    - unique_name: Drug gpi thrptc drug sub cls nm
+      label: Drug gpi thrptc drug sub cls nm
+      description: dim_drug.gpi_thrptc_drug_sub_cls_nm
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_sub_cls_nm
+      name_column: gpi_thrptc_drug_sub_cls_nm
+      sort_column: gpi_thrptc_drug_sub_cls_nm
+    - unique_name: Drug gpi thrptc drug nm cd
+      label: Drug gpi thrptc drug nm cd
+      description: dim_drug.gpi_thrptc_drug_nm_cd
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_nm_cd
+      name_column: gpi_thrptc_drug_nm_cd
+      sort_column: gpi_thrptc_drug_nm_cd
+    - unique_name: Drug gpi thrptc drug nm
+      label: Drug gpi thrptc drug nm
+      description: dim_drug.gpi_thrptc_drug_nm
+      dataset: dim_drug
+      folder: Drug
+      key_columns:
+      - gpi_thrptc_drug_nm
+      name_column: gpi_thrptc_drug_nm
+      sort_column: gpi_thrptc_drug_nm
+- unique_name: Drug Specialty Drug Indicator
+  label: Drug Specialty Drug Indicator
+  folder: Drug
+  levels:
+  - unique_name: Drug Specialty Drug Indicator
+level_attributes:
+- unique_name: Drug
+  label: Drug
+  description: Drug (dim_drug.drug_nm).
+  dataset: dim_drug
+  name_column: drug_nm
+  key_columns:
+  - drug_id
+  sort_column: drug_nm
+- unique_name: Drug Specialty Drug Indicator
+  label: Drug Specialty Drug Indicator
+  dataset: dim_drug
+  name_column: spclty_drug_ind
+  key_columns:
+  - spclty_drug_ind
+  sort_column: spclty_drug_ind

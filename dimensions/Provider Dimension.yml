@@ -1,0 +1,57 @@
+unique_name: Provider Dimension
+object_type: dimension
+label: Provider Dimension
+description: Provider (from Power BI table 'Dim_Provider').
+type: standard
+hierarchies:
+- unique_name: Provider Hierarchy
+  label: Provider Hierarchy
+  folder: Provider
+  levels:
+  - unique_name: Provider
+    secondary_attributes:
+    - unique_name: Provider prov orgzn id
+      label: Provider prov orgzn id
+      description: dim_prov_orgzn_st_ca_test.prov_orgzn_id
+      dataset: dim_prov_orgzn_st_ca_test
+      folder: Provider
+      key_columns:
+      - prov_orgzn_id
+      name_column: prov_orgzn_id
+      sort_column: prov_orgzn_id
+    - unique_name: Provider prov orgzn typ id
+      label: Provider prov orgzn typ id
+      description: dim_prov_orgzn_st_ca_test.prov_orgzn_typ_id
+      dataset: dim_prov_orgzn_st_ca_test
+      folder: Provider
+      key_columns:
+      - prov_orgzn_typ_id
+      name_column: prov_orgzn_typ_id
+      sort_column: prov_orgzn_typ_id
+    - unique_name: Provider Organization Name
+      label: Provider Organization Name
+      description: dim_prov_orgzn_st_ca_test.prov_orgzn_nm
+      dataset: dim_prov_orgzn_st_ca_test
+      folder: Provider
+      key_columns:
+      - prov_orgzn_nm
+      name_column: prov_orgzn_nm
+      sort_column: prov_orgzn_nm
+    - unique_name: Provider State
+      label: Provider State
+      description: dim_prov_orgzn_st_ca_test.c_prov_st
+      dataset: dim_prov_orgzn_st_ca_test
+      folder: Provider
+      key_columns:
+      - c_prov_st
+      name_column: c_prov_st
+      sort_column: c_prov_st
+level_attributes:
+- unique_name: Provider
+  label: Provider
+  description: Provider (dim_prov_orgzn_st_ca_test.c_prov_orgzn_nm_st).
+  dataset: dim_prov_orgzn_st_ca_test
+  name_column: c_prov_orgzn_nm_st
+  key_columns:
+  - prov_org_nm_st_id
+  sort_column: c_prov_orgzn_nm_st

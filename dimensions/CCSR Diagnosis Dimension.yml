@@ -1,0 +1,42 @@
+unique_name: CCSR Diagnosis Dimension
+object_type: dimension
+label: CCSR Diagnosis Dimension
+description: CCSR Diagnosis (from Power BI table 'Dim_CCSRDiagonosis').
+type: standard
+hierarchies:
+- unique_name: CCSR Diagnosis Hierarchy
+  label: CCSR Diagnosis Hierarchy
+  folder: CCSR Diagnosis
+  levels:
+  - unique_name: CCSR Diagnosis
+    secondary_attributes:
+    - unique_name: CCSR Diagnosis Disease Category Level1
+      label: CCSR Diagnosis Disease Category Level1
+      description: dim_ccsr.diseasecategorylevel1
+      dataset: dim_ccsr
+      folder: CCSR Diagnosis
+      key_columns:
+      - diseasecategorylevel1
+      name_column: diseasecategorylevel1
+      sort_column: diseasecategorylevel1
+- unique_name: CCSR Diagnosis Disease
+  label: CCSR Diagnosis Disease
+  folder: CCSR Diagnosis
+  levels:
+  - unique_name: CCSR Diagnosis Disease
+level_attributes:
+- unique_name: CCSR Diagnosis
+  label: CCSR Diagnosis
+  description: CCSR Diagnosis (dim_ccsr.bdy_sys_shrt_desc).
+  dataset: dim_ccsr
+  name_column: bdy_sys_shrt_desc
+  key_columns:
+  - diag_rank
+  sort_column: bdy_sys_shrt_desc
+- unique_name: CCSR Diagnosis Disease
+  label: CCSR Diagnosis Disease
+  dataset: dim_ccsr
+  name_column: bdy_sys_cat_desc
+  key_columns:
+  - bdy_sys_cat_desc
+  sort_column: bdy_sys_cat_desc

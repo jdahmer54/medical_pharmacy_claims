@@ -1,0 +1,20 @@
+unique_name: Period Range Dimension
+object_type: dimension
+label: Period Range Dimension
+description: Period Range (from Power BI table 'Dim_PeriodRange').
+type: standard
+hierarchies:
+- unique_name: Period Range Hierarchy
+  label: Period Range Hierarchy
+  folder: Period Range
+  levels:
+  - unique_name: Period Range
+level_attributes:
+- unique_name: Period Range
+  label: Period Range
+  description: Period Range (dim_periodrange_test.periodrange).
+  dataset: dim_periodrange_test
+  name_column: periodrange
+  key_columns:
+  - periodrange
+  sort_column: periodrange

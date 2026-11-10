@@ -1,0 +1,15 @@
+unique_name: dim_ccsr
+object_type: dataset
+label: dim_ccsr
+description: analytics_mee_uat_silver.dim_ccsr (Power BI table 'Dim_CCSRDiagonosis').
+connection_id: Connection - Claims Experience
+table: dim_ccsr
+columns:
+- name: bdy_sys_shrt_desc
+  data_type: string
+- name: bdy_sys_cat_desc
+  data_type: string
+- name: diseasecategorylevel1
+  data_type: string
+- name: diag_rank
+  data_type: long

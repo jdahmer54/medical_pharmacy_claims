@@ -1,0 +1,79 @@
+unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+object_type: dataset
+label: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+description: analytics_mee_uat_silver.fact_claim_medical_continuous_enrollment_allmonths_ca_agg (Power BI table 'Fact_MedClaim_Continuous_Enrollment_Agg').
+connection_id: Connection - Claims Experience
+table: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+columns:
+- name: periodrange
+  data_type: string
+- name: runout
+  data_type: long
+- name: anchordate
+  data_type: datetime
+- name: monthenddayid
+  data_type: long
+- name: corporateentityid
+  data_type: long
+- name: statefileid
+  data_type: long
+- name: lineofbusinessid
+  data_type: long
+- name: networkid
+  data_type: long
+- name: fundingtypeid
+  data_type: long
+- name: marketsegmentid
+  data_type: long
+- name: membershipcoverageid
+  data_type: long
+- name: productid
+  data_type: long
+- name: accountid
+  data_type: long
+- name: membercount
+  data_type: long
+- name: gendercodeid
+  data_type: long
+- name: ageid
+  data_type: long
+- name: relationshipid
+  data_type: long
+- name: riskscoreid
+  data_type: long
+- name: groupsectionid
+  data_type: long
+- name: employeestatuscode
+  data_type: long
+- name: highcostclaimant
+  data_type: long
+- name: rpt_segm1
+  data_type: long
+- name: rpt_segm2
+  data_type: long
+- name: medicalriskscore
+  data_type: decimal(18,4)
+- name: medicalrxriskscore
+  data_type: decimal(18,4)
+- name: runout_net_pd_amt
+  data_type: double
+- name: runout_net_elig_amt
+  data_type: double
+- name: enrollment
+  data_type: string
+- name: enroll_flag
+  data_type: long
+- name: mee_secty_cd
+  data_type: long
+- name: membercount_when_1
+  data_type: long
+  sql: CASE WHEN enroll_flag = 1 AND enrollment = 'Entry' THEN membercount END
+- name: membercount_when_2
+  data_type: long
+  sql: CASE WHEN enroll_flag = 1 AND enrollment = 'Exit' THEN membercount END
+- name: membercount_when_3
+  data_type: long
+  sql: CASE WHEN relationshipid = 2 THEN membercount END
+- name: membercount_when_4
+  data_type: long
+  sql: CASE WHEN enroll_flag = 1 THEN membercount END

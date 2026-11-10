@@ -1,0 +1,87 @@
+unique_name: Product Dimension
+object_type: dimension
+label: Product Dimension
+description: Product (from Power BI table 'Dim_Product').
+type: standard
+hierarchies:
+- unique_name: Product Hierarchy
+  label: Product Hierarchy
+  folder: Product
+  levels:
+  - unique_name: Product
+    secondary_attributes:
+    - unique_name: Product hlth pln prod typ nm
+      label: Product hlth pln prod typ nm
+      description: dim_prod.hlth_pln_prod_typ_nm
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - hlth_pln_prod_typ_nm
+      name_column: hlth_pln_prod_typ_nm
+      sort_column: hlth_pln_prod_typ_nm
+    - unique_name: Product prod cd
+      label: Product prod cd
+      description: dim_prod.prod_cd
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - prod_cd
+      name_column: prod_cd
+      sort_column: prod_cd
+    - unique_name: Product src prod nm
+      label: Product src prod nm
+      description: dim_prod.src_prod_nm
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - src_prod_nm
+      name_column: src_prod_nm
+      sort_column: src_prod_nm
+    - unique_name: Product ins typ cd
+      label: Product ins typ cd
+      description: dim_prod.ins_typ_cd
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - ins_typ_cd
+      name_column: ins_typ_cd
+      sort_column: ins_typ_cd
+    - unique_name: Product aca ind
+      label: Product aca ind
+      description: dim_prod.aca_ind
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - aca_ind
+      name_column: aca_ind
+      sort_column: aca_ind
+    - unique_name: Product pln nm
+      label: Product pln nm
+      description: dim_prod.pln_nm
+      dataset: dim_prod
+      folder: Product
+      key_columns:
+      - pln_nm
+      name_column: pln_nm
+      sort_column: pln_nm
+- unique_name: Product Type Code
+  label: Product Type Code
+  folder: Product
+  levels:
+  - unique_name: Product Type Code
+level_attributes:
+- unique_name: Product
+  label: Product
+  description: Product (dim_prod.prod_desc).
+  dataset: dim_prod
+  name_column: prod_desc
+  key_columns:
+  - prod_id
+  sort_column: prod_desc
+- unique_name: Product Type Code
+  label: Product Type Code
+  dataset: dim_prod
+  name_column: prod_typ_cd
+  key_columns:
+  - prod_typ_cd
+  sort_column: prod_typ_cd

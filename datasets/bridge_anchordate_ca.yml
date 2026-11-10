@@ -1,0 +1,11 @@
+unique_name: bridge_anchordate_ca
+object_type: dataset
+label: bridge_anchordate_ca
+description: analytics_mee_uat_silver.bridge_anchordate_ca (Power BI table 'Bridge_AnchorDate').
+connection_id: Connection - Claims Experience
+table: bridge_anchordate_ca
+columns:
+- name: anchordate
+  data_type: datetime
+- name: anchordayid
+  data_type: long

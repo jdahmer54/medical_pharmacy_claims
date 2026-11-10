@@ -1,0 +1,11 @@
+unique_name: dim_relation_code
+object_type: dataset
+label: dim_relation_code
+description: analytics_mee_uat_silver.dim_relation_code (Power BI table 'Dim_Relationship').
+connection_id: Connection - Claims Experience
+table: dim_relation_code
+columns:
+- name: relationship_id
+  data_type: long
+- name: relationshipname
+  data_type: string

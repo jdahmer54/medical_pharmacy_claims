@@ -1,0 +1,2793 @@
+unique_name: medical_pharmacy_claims_experience
+object_type: model
+label: Medical & Pharmacy Claims Experience
+description: Medical/pharmacy/BH claims and membership experience model converted from a Power BI model.bim.
+visible: true
+relationships:
+- unique_name: fact_claim_medical_claimants_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_claimants_ca_agg_Anchor_Date_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - anchordayid
+  to:
+    dimension: Anchor Date Dimension
+    level: Anchor Date
+- unique_name: fact_claim_medical_claimants_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_claimants_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_claimants_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_claimants_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_claimants_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_claimants_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_claimants_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_claimants_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_claimants_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_claimants_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_claimants_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_claimants_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_claimants_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Membership_Coverage_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - membershipcoverageid
+  to:
+    dimension: Membership Coverage Dimension
+    level: Membership Coverage
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - monthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - monthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_ipa_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_ipa_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_ipa_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_ipa_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_ipa_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_ipa_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_ipa_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_ipa_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_ipa_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_ipa_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_ipa_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_ipa_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_ipa_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_ipa_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_ipa_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_ipa_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_out_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_out_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_out_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_out_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_out_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_out_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_out_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_out_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_out_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_out_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_out_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_out_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_out_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_out_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_out_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_out_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_pharmclaim_ca_agg_Account_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_pharmclaim_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_pharmclaim_ca_agg_Drug_Handling_Profile_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - drughandlingprofileid
+  to:
+    dimension: Drug Handling Profile Dimension
+    level: Drug Handling Profile
+- unique_name: fact_pharmclaim_ca_agg_Drug_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - drugid
+  to:
+    dimension: Drug Dimension
+    level: Drug
+- unique_name: fact_pharmclaim_ca_agg_Date_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - filledmonthendid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_pharmclaim_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_pharmclaim_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_pharmclaim_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_pharmclaim_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_pharmclaim_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_pharmclaim_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_pharmclaim_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_prof_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_prof_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_prof_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_prof_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_prof_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_prof_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_prof_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_prof_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_prof_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_prof_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_prof_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_prof_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_prof_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_prof_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_prof_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_prof_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_mbrmonth_ca_agg_Account_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_mbrmonth_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_mbrmonth_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_mbrmonth_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_mbrmonth_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_mbrmonth_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_mbrmonth_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_mbrmonth_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_mbrmonth_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_mbrmonth_ca_agg_Membership_Coverage_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - membershipcoverageid
+  to:
+    dimension: Membership Coverage Dimension
+    level: Membership Coverage
+- unique_name: fact_mbrmonth_ca_agg_Date_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - monthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_mbrmonth_ca_agg_Product_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - productid
+  to:
+    dimension: Product Dimension
+    level: Product
+- unique_name: fact_mbrmonth_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_mbrmonth_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_mbrmonth_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_claimants_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_ipa_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_out_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_prof_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_mbrmonth_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_claimants_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_ipa_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_out_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_prof_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_mbrmonth_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_prof_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_pharmclaim_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_out_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_ipa_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_claimants_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_mbrmonth_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_prof_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_pharmclaim_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_out_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_ipa_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_continuous_cohort_allmonths_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_cohort_allmonths_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_claimants_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_claimants_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_claimants_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_prof_visitcnt_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_prof_visitcnt_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_prof_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_prof_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_pharmclaim_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_pharmclaim_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_out_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_out_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_ipa_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_ipa_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_continuous_enrollment_allmonths_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_continuous_enrollment_allmonths_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_mbrmonth_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_mbrmonth_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Product_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - productid
+  to:
+    dimension: Product Dimension
+    level: Product
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_bh_ipa_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_bh_ipa_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_bh_out_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_bh_out_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_bh_out_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_bh_out_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_bh_out_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_bh_out_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_bh_out_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_bh_out_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_bh_out_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_bh_out_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_bh_out_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_bh_out_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_bh_out_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_bh_out_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_bh_out_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_bh_out_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_bh_out_ca_agg_Product_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - productid
+  to:
+    dimension: Product Dimension
+    level: Product
+- unique_name: fact_claim_medical_bh_out_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_bh_out_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_bh_out_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_bh_out_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_bh_out_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_bh_out_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_bh_prof_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_bh_prof_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Date_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - incurredmonthenddayid
+  to:
+    dimension: Date Dimension
+    level: Month
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Product_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - productid
+  to:
+    dimension: Product Dimension
+    level: Product
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_bh_prof_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_bh_prof_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Account_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - accountid
+  to:
+    dimension: Account Dimension
+    level: Account
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Anchor_Date_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - anchordayid
+  to:
+    dimension: Anchor Date Dimension
+    level: Anchor Date
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_CCSR_Diagnosis_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - ccsrdiagrk
+  to:
+    dimension: CCSR Diagnosis Dimension
+    level: CCSR Diagnosis
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Corporate_Entity_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - corporateentityid
+  to:
+    dimension: Corporate Entity Dimension
+    level: Corporate Entity
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Employee_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - employeestatuscode
+  to:
+    dimension: Employee Status Dimension
+    level: Employee Status
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Continuous_Enrollment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - enrollment
+  to:
+    dimension: Continuous Enrollment Dimension
+    level: Continuous Enrollment
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Gender_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - gendercodeid
+  to:
+    dimension: Gender Dimension
+    level: Gender
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Group_Section_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - groupsectionid
+  to:
+    dimension: Group Section Dimension
+    level: Group Section
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_High_Cost_Claimant_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - highcostclaimant
+  to:
+    dimension: High Cost Claimant Dimension
+    level: High Cost Claimant
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Line_of_Business_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - lineofbusinessid
+  to:
+    dimension: Line of Business Dimension
+    level: Line of Business
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Major_Service_Category_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - majorservicecategoryid
+  to:
+    dimension: Major Service Category Dimension
+    level: Major Service Category
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Market_Segment_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - marketsegmentid
+  to:
+    dimension: Market Segment Dimension
+    level: Market Segment
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Relationship_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - relationshipid
+  to:
+    dimension: Relationship Dimension
+    level: Relationship
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Risk_Score_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - riskscoreid
+  to:
+    dimension: Risk Score Dimension
+    level: Risk Score
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Reporting_Segment_1_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - rpt_segm1
+  to:
+    dimension: Reporting Segment 1 Dimension
+    level: Reporting Segment 1
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Contract_Status_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - contractstatusid
+  to:
+    dimension: Contract Status Dimension
+    level: Contract Status
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Product_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - productid
+  to:
+    dimension: Product Dimension
+    level: Product
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Provider_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - provstateid
+  to:
+    dimension: Provider Dimension
+    level: Provider
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Reporting_Segment_2_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - rpt_segm2
+  to:
+    dimension: Reporting Segment 2 Dimension
+    level: Reporting Segment 2
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Runout_Months_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - runout
+  to:
+    dimension: Runout Months Dimension
+    level: Runout Months
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Period_Range_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - periodrange
+  to:
+    dimension: Period Range Dimension
+    level: Period Range
+- unique_name: fact_claim_medical_bh_claimants_ca_agg_Member_Lifestage_Dimension
+  from:
+    dataset: fact_claim_medical_bh_claimants_ca_agg
+    join_columns:
+    - ageid
+  to:
+    dimension: Member Lifestage Dimension
+    level: Member Lifestage
+metrics:
+- unique_name: Rx Net Paid Amount
+  folder: Base - Rx
+- unique_name: Rx Provider Allowed Amount
+  folder: Base - Rx
+- unique_name: Rx Membership Id Distinct Count
+  folder: Base - Rx
+- unique_name: Rx Days Supply Count
+  folder: Base - Rx
+- unique_name: Member Month Member Month
+  folder: Base - Member Month
+- unique_name: Member Month Membership Coverage Id Distinct Count
+  folder: Base - Member Month
+- unique_name: Rx Weighted Claims
+  folder: Base - Rx
+- unique_name: Total_MemberMonth
+  folder: Base - Member Month
+- unique_name: Total_SubscriberMonth
+  folder: Base - Member Month
+- unique_name: Total_DependentMonth
+  folder: Base - Member Month
+- unique_name: Total_MedicalRiskScore_Medical
+  folder: Base - Member Month
+- unique_name: Total_MedicalRxRiskScore_Medical
+  folder: Base - Member Month
+- unique_name: Total_SpouseMonth
+  folder: Base - Member Month
+- unique_name: Claimants claimant count
+  folder: Base - Claimants
+- unique_name: Total_CCSRL1Claimants_Medical
+  folder: Base - Claimants
+- unique_name: Member Month Member Month Avg
+  folder: Base - Member Month
+- unique_name: Cohort members still continuous
+  folder: Base - Cohort
+- unique_name: Cont Enroll Member Count
+  folder: Base - Cont Enroll
+- unique_name: Total_Admits_Medical
+  folder: Base - IP
+- unique_name: Total_AdmissionDays_Medical
+  folder: Base - IP
+- unique_name: Total_OUTVisits_Medical
+  folder: Base - OP
+- unique_name: Prof Visit Visit Count
+  folder: Base - Prof Visit
+- unique_name: Total_PROFVisits_Medical
+  folder: Base - Prof Visit
+- unique_name: Total_EntryMemberCount_CE
+  folder: Base - Cont Enroll
+- unique_name: Total_ExitMemberCount_CE
+  folder: Base - Cont Enroll
+- unique_name: Total_IPAAllowedAmount_Medical
+  folder: Base - IP
+- unique_name: Total_OUTAllowedAmount_Medical
+  folder: Base - OP
+- unique_name: Total_PROFAllowedAmount_Medical
+  folder: Base - Prof
+- unique_name: Total_IPANetPaidAmount_Medical
+  folder: Base - IP
+- unique_name: Total_OUTNetPaidAmount_Medical
+  folder: Base - OP
+- unique_name: Total_PROFNetPaidAmount_Medical
+  folder: Base - Prof
+- unique_name: Total_Subscriber_CE_Count
+  folder: Base - Cont Enroll
+- unique_name: Member Month Month End Day Id Distinct Count
+  folder: Base - Member Month
+- unique_name: Total_Average_MemberMonth
+  folder: Base - Cont Enroll
+- unique_name: Total_Avg_age_medical
+  folder: Base - Member Month
+- unique_name: Total_IPABilledAmount_Medical
+  folder: Base - IP
+- unique_name: Total_OUTBilledAmount_Medical
+  folder: Base - OP
+- unique_name: Total_PROFBilledmount_Medical
+  folder: Base - Prof
+- unique_name: Total_Claimants_Medical
+  folder: Base - Claimants
+- unique_name: Total_IPAClaimsPerK_Medical
+  folder: Base - IP
+- unique_name: Total_OUTClaimsPerK_Medical
+  folder: Base - OP
+- unique_name: Prof Visit Claim Count
+  folder: Base - Prof Visit
+- unique_name: Total_PROFClaimsPerK_Medical
+  folder: Base - Prof Visit
+- unique_name: OP Non Covered Amount
+  folder: Base - OP
+- unique_name: IP Non Covered Amount
+  folder: Base - IP
+- unique_name: Prof Non Covered Amount
+  folder: Base - Prof
+- unique_name: Total_IPADiscountAmount_Medical
+  folder: Base - IP
+- unique_name: Total_OUTDiscountAmount_Medical
+  folder: Base - OP
+- unique_name: Total_PROFDiscountAmount_Medical
+  folder: Base - Prof
+- unique_name: Member Month Medical Risk Score Avg
+  folder: Base - Member Month
+- unique_name: Cont Enroll Medical Risk Score
+  folder: Base - Cont Enroll
+- unique_name: Prof Procedure Count
+  folder: Base - Prof
+- unique_name: Total_ExitMemberCount
+  folder: Base - Cont Enroll
+- unique_name: Total_FemaleMemberMonth
+  folder: Base - Member Month
+- unique_name: Total_MaleMemberMonth
+  folder: Base - Member Month
+- unique_name: Total_MedicalRiskScore_Medicalcount
+  folder: Base - Member Month
+- unique_name: IP Medical Coinsurance
+  folder: Base - IP
+- unique_name: IP Medical Copayment
+  folder: Base - IP
+- unique_name: IP Medical Deductible
+  folder: Base - IP
+- unique_name: OP Medical Coinsurance
+  folder: Base - OP
+- unique_name: OP Medical Copayment
+  folder: Base - OP
+- unique_name: OP Medical Deductible
+  folder: Base - OP
+- unique_name: Prof Medical Coinsurance
+  folder: Base - Prof
+- unique_name: Prof Medical Copayment
+  folder: Base - Prof
+- unique_name: Prof Medical Deductible
+  folder: Base - Prof
+- unique_name: Total_PCPProcedures_Medical
+  folder: Base - Prof
+- unique_name: Cont Enroll Allowed Amount Avg
+  folder: Base - Cont Enroll
+- unique_name: Cont Enroll Net Paid Amount Avg
+  folder: Base - Cont Enroll
+- unique_name: Total_SpecialistProcedures_Medical
+  folder: Base - Prof
+- unique_name: Claimants Medical Risk Score
+  folder: Base - Claimants
+- unique_name: Total_MedicalRisk_Disease
+  folder: Base - Claimants
+- unique_name: Total_PROFVisits_Service
+  folder: Base - Prof
+- unique_name: Total_SCClaimants_Medical
+  folder: Base - Claimants
+- unique_name: Total_Avg_DaysSupply_Pharmacy
+  folder: Base - Rx
+- unique_name: Total_HCC_Pharmacy
+  folder: Base - Rx
+- unique_name: Total_IPANetPaidAmount_BH
+  folder: Base - BH IP
+- unique_name: Total_OUTNetPaidAmount_BH
+  folder: Base - BH OP
+- unique_name: Total_PROFNetPaidAmount_BH
+  folder: Base - BH Prof
+- unique_name: Total_Admits_BH
+  folder: Base - BH IP
+- unique_name: Total_IPAAllowedAmount_BH
+  folder: Base - BH IP
+- unique_name: Total_OUTAllowedAmount_BH
+  folder: Base - BH OP
+- unique_name: Total_PROFAllowedAmount_BH
+  folder: Base - BH Prof
+- unique_name: Total_IPABilledAmount_BH
+  folder: Base - BH IP
+- unique_name: Total_OUTBilledAmount_BH
+  folder: Base - BH OP
+- unique_name: Total_PROFBilledmount_BH
+  folder: Base - BH Prof
+- unique_name: BH Claimants claimant count
+  folder: Base - BH Claimants
+- unique_name: Total_CCSRL1Claimants_BH
+  folder: Base - BH Claimants
+- unique_name: Total_CCSRL2Claimants_BH
+  folder: Base - BH Claimants
+- unique_name: Total_Claimants_BH
+  folder: Base - BH Claimants
+- unique_name: Total_IPADiscountAmount_BH
+  folder: Base - BH IP
+- unique_name: Total_OUTDiscountAmount_BH
+  folder: Base - BH OP
+- unique_name: Total_PROFDiscountAmount_BH
+  folder: Base - BH Prof
+- unique_name: BH IP Loc Key Count
+  folder: Base - BH IP
+- unique_name: BH OP Bh Visit
+  folder: Base - BH OP
+- unique_name: BH Prof Procedure Count
+  folder: Base - BH Prof
+- unique_name: Total_IPANonCoveredAmount_BH
+  folder: Base - BH IP
+- unique_name: BH OP Non Covered Amount
+  folder: Base - BH OP
+- unique_name: BH Prof Non Covered Amount
+  folder: Base - BH Prof
+- unique_name: BH IP Medical Coinsurance
+  folder: Base - BH IP
+- unique_name: BH IP Medical Copayment
+  folder: Base - BH IP
+- unique_name: BH IP Medical Deductible
+  folder: Base - BH IP
+- unique_name: BH OP Medical Coinsurance
+  folder: Base - BH OP
+- unique_name: BH OP Medical Copayment
+  folder: Base - BH OP
+- unique_name: BH OP Medical Deductible
+  folder: Base - BH OP
+- unique_name: BH Prof Medical Coinsurance
+  folder: Base - BH Prof
+- unique_name: BH Prof Medical Copayment
+  folder: Base - BH Prof
+- unique_name: BH Prof Medical Deductible
+  folder: Base - BH Prof
+- unique_name: Total_OUTVisits_BH
+  folder: Base - BH OP
+- unique_name: Total_OUTDays_BH
+  folder: Base - BH OP
+- unique_name: Total_ProfDays_BH
+  folder: Base - BH Prof
+- unique_name: Total_ProfVisits_BH
+  folder: Base - BH Prof
+- unique_name: Total_OUTAdmits_BH
+  folder: Base - BH OP
+- unique_name: Member Month Contract Size
+  folder: Base - Member Month
+- unique_name: Rx Pharmacy Claim Count
+  folder: Base - Rx
+- unique_name: Rx Utilizer Count
+  folder: Base - Rx
+- unique_name: Rx Rebate Amount
+  folder: Base - Rx
+- unique_name: Claimants Ccsrl1 Flag
+  folder: Base - Claimants
+- unique_name: Claimants Claimants Flag
+  folder: Base - Claimants
+- unique_name: Claimants Ccsrl2 Flag
+  folder: Base - Claimants
+- unique_name: Claimants SC Flag
+  folder: Base - Claimants
+- unique_name: Cont Enroll Medical Rx Risk Score
+  folder: Base - Cont Enroll
+- unique_name: Cont Enroll Net Paid Amount
+  folder: Base - Cont Enroll
+- unique_name: Cont Enroll Allowed Amount
+  folder: Base - Cont Enroll
+- unique_name: Cohort cohort size
+  folder: Base - Cohort
+- unique_name: Prof Visit Visits flag
+  folder: Base - Prof Visit
+- unique_name: Prof Visit Ccsrl1 Flag
+  folder: Base - Prof Visit
+- unique_name: Prof Visit Claims flag
+  folder: Base - Prof Visit
+- unique_name: BH IP Claim Count
+  folder: Base - BH IP
+- unique_name: BH IP Bh Day
+  folder: Base - BH IP
+- unique_name: BH IP Bh Hours
+  folder: Base - BH IP
+- unique_name: BH IP Bh Visit
+  folder: Base - BH IP
+- unique_name: BH OP Claim Count
+  folder: Base - BH OP
+- unique_name: BH OP Bh Hours
+  folder: Base - BH OP
+- unique_name: BH Prof Visit Count
+  folder: Base - BH Prof
+- unique_name: BH Prof Bh Hours
+  folder: Base - BH Prof
+- unique_name: BH Prof Loc Key Count
+  folder: Base - BH Prof
+- unique_name: BH Claimants Medical Risk Score
+  folder: Base - BH Claimants
+- unique_name: BH Claimants Ccsrl2 Flag
+  folder: Base - BH Claimants
+- unique_name: BH Claimants Ccsrl1 Flag
+  folder: Base - BH Claimants
+- unique_name: BH Claimants Claimants Flag
+  folder: Base - BH Claimants
+- unique_name: Total_Spend/Claimant_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Spend/day_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_AverageMedicalMembers_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Claimants/1000_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_RxRetail%Scripts_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Specialty%Scripts_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Specialty%Spend_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_RetailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_MailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_SpecialtyNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMMailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMMailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMRetailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMRetailNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMSpecialtyNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMSpecialtyNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_RetailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_SpecialtyAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_MailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMRetailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMSpecialtyAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMMailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMRetailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMSpecialtyAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMMailAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_AllowedAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_NetPaidAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PMPMNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_PEPMNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_MemberMonth_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_SubscriberMonth_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Avg_ContractSize_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_MemberMonth_Medical
+  folder: Common
+- unique_name: CCSRL1_PrevalenceRate%
+  folder: Medical - Base
+- unique_name: HCCType_Allowed%_Medical
+  folder: Medical - Base
+- unique_name: HCCType_Member%_Medical
+  folder: Medical - Base
+- unique_name: HCCType_NetPaid%_Medical
+  folder: Medical - Base
+- unique_name: In-NetworkAdmissions%_Medical
+  folder: Medical - Base
+- unique_name: In-NetworkPaid%_Medical
+  folder: Medical - Base
+- unique_name: In-NetworkVisitsOUT%_Medical
+  folder: Medical - Base
+- unique_name: In-NetworkVisitsProf%_Medical
+  folder: Medical - Base
+- unique_name: Test_numberofmonths
+  folder: Medical - Base
+- unique_name: Total_AdmissionUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_AdmissionUnitCostNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_AdmitsUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_AdmitsUnitCostNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_Allowed_Per_Admit
+  folder: Medical - Base
+- unique_name: Total_Allowed_Per_OPVisit
+  folder: Medical - Base
+- unique_name: Total_Allowed_Per_ProfVisit
+  folder: Medical - Base
+- unique_name: Total_AllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_AllowedPerCCSRL1Claimants_Medical
+  folder: Medical - Base
+- unique_name: Total_AllowedPerCCSRL2Claimants_Medical
+  folder: Medical - Base
+- unique_name: Total_ALOS_Medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age0-12children_medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age13-24Youthful_medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age25-34EarlyCareer_medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age35-44Families_medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age45-54Established_medical
+  folder: Medical - Base
+- unique_name: Total_Avg_age55+EmptyNests_medical
+  folder: Medical - Base
+- unique_name: total_Avg_Contractsize
+  folder: Medical - Base
+- unique_name: Total_Avg_ContractSize_Medical
+  folder: Medical - Base
+- unique_name: Total_AvgRisk_Medical
+  folder: Medical - Base
+- unique_name: Total_BilledAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_CCSRL2Claimants_Medical
+  folder: Medical - Base
+- unique_name: Total_CCSRL2Claimantsperk_Medical
+  folder: Medical - Base
+- unique_name: Total_Claimantsperk_Medical
+  folder: Medical - Base
+- unique_name: Total_ClaimsPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_ContEnrol_MemberCount_CE_cohort
+  folder: Medical - Base
+- unique_name: Total_Covered_Medical
+  folder: Medical - Base
+- unique_name: Total_DependentMonth_Medical
+  folder: Medical - Base
+- unique_name: Total_DiscountAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ENANonHCCIPANetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ENANonHCCOUTNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ENANonHCCPROFNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ERAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ERNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_ERVisits_Medical
+  folder: Medical - Base
+- unique_name: Total_ERVisitsPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_ERVisitUnitperERCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCClaimants_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCIPAAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCIPANetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCNetpaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCOUTAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCOUTNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCPEPMAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCPEPMNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCPMPMAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCPMPMNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCProfAllowedAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCPROFNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCTypePEPMAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCTypePEPMNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCTypePMPMAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_HCCTypePMPMNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_In-NetworkAdmissions%_Medical
+  folder: Medical - Base
+- unique_name: Total_In-NetworkPaid%_Medical
+  folder: Medical - Base
+- unique_name: Total_In-NetworkVisitsOUT%_Medical
+  folder: Medical - Base
+- unique_name: Total_In-NetworkVisitsProf%_Medical
+  folder: Medical - Base
+- unique_name: Total_IPANonCoveredAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_IPAUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_Medical_Covered_Medical
+  folder: Medical - Base
+- unique_name: Total_MedicalAvgRiskScore_Medical
+  folder: Medical - Base
+- unique_name: Total_MedicalRiskscore_Medical_CE
+  folder: Medical - Base
+- unique_name: Total_MemberCount
+  folder: Medical - Base
+- unique_name: Total_MemberMonth_HF
+  folder: Medical - Base
+- unique_name: Total_MemberMonthCE
+  folder: Medical - Base
+- unique_name: Total_MemberMonthFemale_Medical
+  folder: Medical - Base
+- unique_name: Total_MemberMonthFemale_Medical%
+  folder: Medical - Base
+- unique_name: Total_MemberMonthFemale_Pharmacy
+  folder: Medical - Base
+- unique_name: Total_NetPaid_Per_Admit
+  folder: Medical - Base
+- unique_name: Total_NetPaid_Per_OPVisit
+  folder: Medical - Base
+- unique_name: Total_NetPaid_Per_ProfVisit
+  folder: Medical - Base
+- unique_name: Total_NetpaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_NetPaidPerCCSRL1Claimants_Medical
+  folder: Medical - Base
+- unique_name: Total_NetPaidPerCCSRL2Claimants_Medical
+  folder: Medical - Base
+- unique_name: Total_NonCoveredAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_NonHCCClaimants_Medical
+  folder: Medical - Base
+- unique_name: Total_NonHCCIPANetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_NonHCCNetpaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_NonHCCOUTNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_NonHCCPROFNetPaidAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_OOP_medical
+  folder: Medical - Base
+- unique_name: Total_OUTNonCoveredAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_OUTUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_OUTVisitUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_OUTVisitUnitCostNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PEPM_CE_AllowedAmount
+  folder: Medical - Base
+- unique_name: Total_PEPM_CE_NetPaidAmount
+  folder: Medical - Base
+- unique_name: Total_PEPMAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PEPMERAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PEPMERERNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PEPMNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_Plan_Paid_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMERAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMERERNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMIPAAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMIPANetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMOUTAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMOUTNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMPROFAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PMPMPROFNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PreHCCPMPMIPANetpaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFNonCoveredAmount_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFProcedures_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFProceduresUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFProceduresUnitCostNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFVisitUnitCostAllowed_Medical
+  folder: Medical - Base
+- unique_name: Total_PROFVisitUnitCostNetPaid_Medical
+  folder: Medical - Base
+- unique_name: Total_SpouseMonth_Medical
+  folder: Medical - Base
+- unique_name: Total_SubscriberMonth_Medical
+  folder: Medical - Base
+- unique_name: Total_Unitcost_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyAdmissionDaysPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyAdmitsPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyOUTVisitsPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyPCPProceduresPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyPROFVisitsPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyServicesPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlySpecialistProceduresPerK_Medical
+  folder: Medical - Base
+- unique_name: Total_AvgRisk_Disease
+  folder: Medical - Base
+- unique_name: Total_CCSRL1RiskScore_Medical
+  folder: Medical - Base
+- unique_name: Total_YearlyPROFVisitsPerK_Service
+  folder: Medical - Base
+- unique_name: Total_PROFVisitUnitCostAllowed_Service
+  folder: Medical - Base
+- unique_name: Total_PROFVisitUnitCostNetPaid_Service
+  folder: Medical - Base
+- unique_name: Total_Allowed_Per_ProfVisit_Service
+  folder: Medical - Base
+- unique_name: Total_NetPaid_Per_ProfVisit_Service
+  folder: Medical - Base
+- unique_name: Total_SCClaimantsperk_Medical
+  folder: Medical - Base
+- unique_name: Generic_Dispense%_AllowedAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Generic_Dispense%_NetPaidAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Mail_Order%_AllowedAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Mail_Order%_NetPaidAmount_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_DaysSupply_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_DaysSupplyPerK_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_DaysSupplyUnitCostAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_DaysSupplyUnitCostNetpaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_Scripts_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_ScriptsPerK_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_ScriptsUnitCostAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_ScriptsUnitCostNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: In-NetworkPaid%_BH
+  folder: BH - Base
+- unique_name: Total_AdmitsUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_AdmitsUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_AllowedAmount_BH
+  folder: BH - Base
+- unique_name: Total_Avg_age_BH
+  folder: BH - Base
+- unique_name: Total_Avg_ContractSize_BH
+  folder: BH - Base
+- unique_name: Total_AvgRisk_BH
+  folder: BH - Base
+- unique_name: Total_BilledAmount_BH
+  folder: BH - Base
+- unique_name: Total_CCSRL1Claimantsperk_BH
+  folder: BH - Base
+- unique_name: Total_CCSRL2Claimantsperk_BH
+  folder: BH - Base
+- unique_name: Total_Claimantsperk_BH
+  folder: BH - Base
+- unique_name: Total_DiscountAmount_BH
+  folder: BH - Base
+- unique_name: Total_In-NetworkPaid%_BH
+  folder: BH - Base
+- unique_name: Total_Medical_Covered_BH
+  folder: BH - Base
+- unique_name: Total_MemberMonthFemale_BH
+  folder: BH - Base
+- unique_name: Total_MemberMonthFemale_BH%
+  folder: BH - Base
+- unique_name: Total_NetpaidAmount_BH
+  folder: BH - Base
+- unique_name: Total_NonCoveredAmount_BH
+  folder: BH - Base
+- unique_name: Total_OOP_BH
+  folder: BH - Base
+- unique_name: Total_OUTNonCoveredAmount_BH
+  folder: BH - Base
+- unique_name: Total_OUTVisitUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_OUTVisitUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_PEPMAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PEPMNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_Plan_Paid_BH
+  folder: BH - Base
+- unique_name: Total_PMPMAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PMPMIPAAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PMPMIPANetPaid_BH
+  folder: BH - Base
+- unique_name: Total_PMPMNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_PMPMOUTAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PMPMOUTNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_PMPMPROFAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PMPMPROFNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_PROFNonCoveredAmount_BH
+  folder: BH - Base
+- unique_name: Total_PROFProcedures_BH
+  folder: BH - Base
+- unique_name: Total_YearlyAdmitsPerK_BH
+  folder: BH - Base
+- unique_name: Total_YearlyOUTVisitsPerK_BH
+  folder: BH - Base
+- unique_name: Total_YearlyServicesPerK_BH
+  folder: BH - Base
+- unique_name: Total_AdmissionDays_BH
+  folder: BH - Base
+- unique_name: Total_AdmissionUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_AdmissionUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_YearlyAdmissionDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_MemberMonth_BH
+  folder: BH - Base
+- unique_name: Total_AdmissionDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_ALOS_BH
+  folder: BH - Base
+- unique_name: Total_OUTDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_OUTYearlyDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_ProfDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_YearlyVisitsPerK_BH
+  folder: BH - Base
+- unique_name: Total_ProfYearlyDaysPerK_BH
+  folder: BH - Base
+- unique_name: Total_HCCTypePEPMAllowed_BH
+  folder: BH - Base
+- unique_name: Total_HCCTypePEPMNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_HCCTypePMPMAllowed_BH
+  folder: BH - Base
+- unique_name: Total_HCCTypePMPMNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_ProfVisitUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_PROFVisitUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_HCCTypePMPMAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_HCCTypePEPMNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_HCCTypePEPMAllowed_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_HCCTypePMPMNetPaid_Pharmacy
+  folder: Pharmacy - Base
+- unique_name: Total_OUT_AdmissionUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_OUT_AdmissionUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_OUT_AdmitsUnitCostAllowed_BH
+  folder: BH - Base
+- unique_name: Total_OUT_AdmitsUnitCostNetPaid_BH
+  folder: BH - Base
+- unique_name: Total_OUTAdmitsPerK_BH
+  folder: BH - Base
+- unique_name: Total_OUTALOS_BH
+  folder: BH - Base
+- unique_name: Total_YearlyPROFVisitsPerK_BH
+  folder: BH - Base
+- unique_name: Total_Avg_age_Pharmacy
+  folder: Pharmacy - Base

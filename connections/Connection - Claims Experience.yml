@@ -1,0 +1,6 @@
+unique_name: Connection - Claims Experience
+label: Connection - Claims Experience
+object_type: connection
+as_connection: Databricks
+database: adb_mirror_altprod
+schema: analytics_mee_uat_silver

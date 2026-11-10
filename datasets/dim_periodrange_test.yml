@@ -1,0 +1,9 @@
+unique_name: dim_periodrange_test
+object_type: dataset
+label: dim_periodrange_test
+description: analytics_mee_uat_silver.dim_periodrange_test (Power BI table 'Dim_PeriodRange').
+connection_id: Connection - Claims Experience
+table: dim_periodrange_test
+columns:
+- name: periodrange
+  data_type: string

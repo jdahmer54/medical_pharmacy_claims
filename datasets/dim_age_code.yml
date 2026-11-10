@@ -1,0 +1,11 @@
+unique_name: dim_age_code
+object_type: dataset
+label: dim_age_code
+description: analytics_mee_uat_silver.dim_age_code (Power BI table 'Dim_MemberLifestage').
+connection_id: Connection - Claims Experience
+table: dim_age_code
+columns:
+- name: ageid
+  data_type: long
+- name: lifestage
+  data_type: string

@@ -1,0 +1,86 @@
+unique_name: fact_mbrmonth_ca_agg
+object_type: dataset
+label: fact_mbrmonth_ca_agg
+description: analytics_mee_uat_silver.fact_mbrmonth_ca_agg (Power BI table 'Fact_Membermonth_Agg').
+connection_id: Connection - Claims Experience
+table: fact_mbrmonth_ca_agg
+columns:
+- name: monthenddayid
+  data_type: long
+- name: corporateentityid
+  data_type: long
+- name: statefileid
+  data_type: long
+- name: lineofbusinessid
+  data_type: long
+- name: networkid
+  data_type: long
+- name: fundingtypeid
+  data_type: long
+- name: marketsegmentid
+  data_type: long
+- name: membershipcoverageid
+  data_type: long
+- name: productid
+  data_type: long
+- name: accountid
+  data_type: long
+- name: membershipmonth
+  data_type: long
+- name: membermonth
+  data_type: long
+- name: medicalriskscore
+  data_type: double
+- name: medicalrxriskscore
+  data_type: double
+- name: age
+  data_type: double
+- name: gendercodeid
+  data_type: long
+- name: ageid
+  data_type: long
+- name: relationshipid
+  data_type: long
+- name: riskscoreid
+  data_type: long
+- name: groupsectionid
+  data_type: long
+- name: periodrange
+  data_type: string
+- name: runout
+  data_type: long
+- name: anchordate
+  data_type: datetime
+- name: anchordayid
+  data_type: long
+- name: employeestatuscode
+  data_type: long
+- name: rpt_segm1
+  data_type: long
+- name: rpt_segm2
+  data_type: long
+- name: enrollment
+  data_type: long
+- name: highcostclaimant
+  data_type: long
+- name: mee_secty_cd
+  data_type: long
+- name: contractsize
+  data_type: long
+- name: contractsizecategory
+  data_type: string
+- name: membershipmonth_when_1
+  data_type: long
+  sql: CASE WHEN relationshipid = 2 THEN membershipmonth END
+- name: membershipmonth_when_2
+  data_type: long
+  sql: CASE WHEN relationshipid = 3 THEN membershipmonth END
+- name: membershipmonth_when_3
+  data_type: long
+  sql: CASE WHEN relationshipid = 1 THEN membershipmonth END
+- name: membershipmonth_when_4
+  data_type: long
+  sql: CASE WHEN gendercodeid = 1 THEN membershipmonth END
+- name: membershipmonth_when_5
+  data_type: long
+  sql: CASE WHEN gendercodeid = 2 THEN membershipmonth END

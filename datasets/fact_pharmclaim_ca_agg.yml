@@ -1,0 +1,85 @@
+unique_name: fact_pharmclaim_ca_agg
+object_type: dataset
+label: fact_pharmclaim_ca_agg
+description: analytics_mee_uat_silver.fact_pharmclaim_ca_agg (Power BI table 'Fact_MedClaim_Pharmacy_Agg').
+connection_id: Connection - Claims Experience
+table: fact_pharmclaim_ca_agg
+columns:
+- name: periodrange
+  data_type: string
+- name: runout
+  data_type: long
+- name: anchordate
+  data_type: datetime
+- name: filledmonthendid
+  data_type: long
+- name: majorservicecategoryid
+  data_type: long
+- name: serviceplaceclassificationid
+  data_type: long
+- name: corporateentityid
+  data_type: long
+- name: claimtypeid
+  data_type: long
+- name: drugid
+  data_type: long
+- name: drughandlingprofileid
+  data_type: long
+- name: lineofbusinessid
+  data_type: long
+- name: networkid
+  data_type: long
+- name: fundingtypeid
+  data_type: long
+- name: marketsegmentid
+  data_type: long
+- name: productcodeid
+  data_type: long
+- name: ilhmoindicatorid
+  data_type: long
+- name: primeindicatorid
+  data_type: long
+- name: accountid
+  data_type: long
+- name: groupsectionid
+  data_type: long
+- name: gendercodeid
+  data_type: long
+- name: ageid
+  data_type: long
+- name: relationshipid
+  data_type: long
+- name: riskscoreid
+  data_type: long
+- name: membershipid
+  data_type: long
+- name: employeestatuscode
+  data_type: long
+- name: rpt_segm1
+  data_type: long
+- name: rpt_segm2
+  data_type: long
+- name: enrollment
+  data_type: long
+- name: netpaidamount
+  data_type: double
+- name: providerallowedamount
+  data_type: double
+- name: weightedclaims
+  data_type: long
+- name: pharmacyclaimcount
+  data_type: long
+- name: utilizercount
+  data_type: long
+- name: dayssupplycount
+  data_type: long
+- name: rebateamount
+  data_type: double
+- name: day_sply_rng_id
+  data_type: long
+- name: acct_id
+  data_type: long
+- name: mee_secty_cd
+  data_type: long
+- name: highcostclaimant
+  data_type: long

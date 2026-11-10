@@ -1,0 +1,39 @@
+unique_name: Market Segment Dimension
+object_type: dimension
+label: Market Segment Dimension
+description: Market Segment (from Power BI table 'Dim_MarketSegment').
+type: standard
+hierarchies:
+- unique_name: Market Segment Hierarchy
+  label: Market Segment Hierarchy
+  folder: Market Segment
+  levels:
+  - unique_name: Market Segment
+    secondary_attributes:
+    - unique_name: Market Segment Code
+      label: Market Segment Code
+      description: dim_mkt_seg.mkt_seg_cd
+      dataset: dim_mkt_seg
+      folder: Market Segment
+      key_columns:
+      - mkt_seg_cd
+      name_column: mkt_seg_cd
+      sort_column: mkt_seg_cd
+    - unique_name: Market Segment Corporate Entity Code
+      label: Market Segment Corporate Entity Code
+      description: dim_mkt_seg.corp_ent_cd
+      dataset: dim_mkt_seg
+      folder: Market Segment
+      key_columns:
+      - corp_ent_cd
+      name_column: corp_ent_cd
+      sort_column: corp_ent_cd
+level_attributes:
+- unique_name: Market Segment
+  label: Market Segment
+  description: Market Segment (dim_mkt_seg.mkt_seg_desc).
+  dataset: dim_mkt_seg
+  name_column: mkt_seg_desc
+  key_columns:
+  - mkt_seg_cd_id
+  sort_column: mkt_seg_desc

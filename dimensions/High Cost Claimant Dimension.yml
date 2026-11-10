@@ -1,0 +1,68 @@
+unique_name: High Cost Claimant Dimension
+object_type: dimension
+label: High Cost Claimant Dimension
+description: High Cost Claimant (from Power BI table 'Dim_HighCostClaimant').
+type: standard
+hierarchies:
+- unique_name: High Cost Claimant Hierarchy
+  label: High Cost Claimant Hierarchy
+  folder: High Cost Claimant
+  levels:
+  - unique_name: High Cost Claimant
+- unique_name: High Cost Claimant cost rng schm nm
+  label: High Cost Claimant cost rng schm nm
+  folder: High Cost Claimant
+  levels:
+  - unique_name: High Cost Claimant cost rng schm nm
+- unique_name: High Cost Claimant cost rng lowr amt
+  label: High Cost Claimant cost rng lowr amt
+  folder: High Cost Claimant
+  levels:
+  - unique_name: High Cost Claimant cost rng lowr amt
+- unique_name: High Cost Claimant cost rng upr lmt amt
+  label: High Cost Claimant cost rng upr lmt amt
+  folder: High Cost Claimant
+  levels:
+  - unique_name: High Cost Claimant cost rng upr lmt amt
+- unique_name: High Cost Claimant HCCType
+  label: High Cost Claimant HCCType
+  folder: High Cost Claimant
+  levels:
+  - unique_name: High Cost Claimant HCCType
+level_attributes:
+- unique_name: High Cost Claimant
+  label: High Cost Claimant
+  description: High Cost Claimant (dim_cost_rng.cost_rng_nm).
+  dataset: dim_cost_rng
+  name_column: cost_rng_nm
+  key_columns:
+  - cost_rng_id
+  sort_column: cost_rng_nm
+- unique_name: High Cost Claimant cost rng schm nm
+  label: High Cost Claimant cost rng schm nm
+  dataset: dim_cost_rng
+  name_column: cost_rng_schm_nm
+  key_columns:
+  - cost_rng_schm_nm
+  sort_column: cost_rng_schm_nm
+- unique_name: High Cost Claimant cost rng lowr amt
+  label: High Cost Claimant cost rng lowr amt
+  dataset: dim_cost_rng
+  name_column: cost_rng_lowr_amt
+  key_columns:
+  - cost_rng_lowr_amt
+  sort_column: cost_rng_lowr_amt
+- unique_name: High Cost Claimant cost rng upr lmt amt
+  label: High Cost Claimant cost rng upr lmt amt
+  dataset: dim_cost_rng
+  name_column: cost_rng_upr_lmt_amt
+  key_columns:
+  - cost_rng_upr_lmt_amt
+  sort_column: cost_rng_upr_lmt_amt
+- unique_name: High Cost Claimant HCCType
+  label: High Cost Claimant HCCType
+  dataset: dim_cost_rng
+  name_column: cost_rng_cat_nm
+  key_columns:
+  - cost_rng_cat_nm
+  sort_column: cost_rng_cat_nm

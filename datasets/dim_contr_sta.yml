@@ -1,0 +1,13 @@
+unique_name: dim_contr_sta
+object_type: dataset
+label: dim_contr_sta
+description: analytics_mee_uat_silver.dim_contr_sta (Power BI table 'Dim_ContractStatuss').
+connection_id: Connection - Claims Experience
+table: dim_contr_sta
+columns:
+- name: contr_sta_id
+  data_type: long
+- name: contr_sta_cd
+  data_type: string
+- name: contr_sta_desc
+  data_type: string

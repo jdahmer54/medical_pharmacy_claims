@@ -1,0 +1,48 @@
+unique_name: Line of Business Dimension
+object_type: dimension
+label: Line of Business Dimension
+description: Line of Business (from Power BI table 'dim_lob').
+type: standard
+hierarchies:
+- unique_name: Line of Business Hierarchy
+  label: Line of Business Hierarchy
+  folder: Line of Business
+  levels:
+  - unique_name: Line of Business
+    secondary_attributes:
+    - unique_name: Lineof Business Code
+      label: Lineof Business Code
+      description: dim_lob.lob_cd
+      dataset: dim_lob
+      folder: Line of Business
+      key_columns:
+      - lob_cd
+      name_column: lob_cd
+      sort_column: lob_cd
+    - unique_name: Line of Business Sub Lineof Business Name
+      label: Line of Business Sub Lineof Business Name
+      description: dim_lob.sub_lob_nm
+      dataset: dim_lob
+      folder: Line of Business
+      key_columns:
+      - sub_lob_nm
+      name_column: sub_lob_nm
+      sort_column: sub_lob_nm
+    - unique_name: Line of Business d lob nm
+      label: Line of Business d lob nm
+      description: dim_lob.d_lob_nm
+      dataset: dim_lob
+      folder: Line of Business
+      key_columns:
+      - d_lob_nm
+      name_column: d_lob_nm
+      sort_column: d_lob_nm
+level_attributes:
+- unique_name: Line of Business
+  label: Line of Business
+  description: Line of Business (dim_lob.lob_nm).
+  dataset: dim_lob
+  name_column: lob_nm
+  key_columns:
+  - lob_id
+  sort_column: lob_nm

@@ -1,0 +1,19 @@
+unique_name: dim_cost_rng
+object_type: dataset
+label: dim_cost_rng
+description: analytics_mee_uat_silver.dim_cost_rng (Power BI table 'Dim_HighCostClaimant').
+connection_id: Connection - Claims Experience
+table: dim_cost_rng
+columns:
+- name: cost_rng_id
+  data_type: long
+- name: cost_rng_schm_nm
+  data_type: string
+- name: cost_rng_nm
+  data_type: string
+- name: cost_rng_lowr_amt
+  data_type: decimal(18,4)
+- name: cost_rng_upr_lmt_amt
+  data_type: decimal(18,4)
+- name: cost_rng_cat_nm
+  data_type: string

@@ -1,0 +1,105 @@
+unique_name: Major Service Category Dimension
+object_type: dimension
+label: Major Service Category Dimension
+description: Major Service Category (from Power BI table 'Dim_MajorServiceCategory').
+type: standard
+hierarchies:
+- unique_name: Major Service Category Hierarchy
+  label: Major Service Category Hierarchy
+  folder: Major Service Category
+  levels:
+  - unique_name: Major Service Category
+    secondary_attributes:
+    - unique_name: Major Service Category Service Category Code
+      label: Major Service Category Service Category Code
+      description: dim_maj_svc_cat.svc_cat_cd
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - svc_cat_cd
+      name_column: svc_cat_cd
+      sort_column: svc_cat_cd
+    - unique_name: Major Service Category Service Category Description
+      label: Major Service Category Service Category Description
+      description: dim_maj_svc_cat.svc_cat_desc
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - svc_cat_desc
+      name_column: svc_cat_desc
+      sort_column: svc_cat_desc
+    - unique_name: Major Service Category Acute Indicator
+      label: Major Service Category Acute Indicator
+      description: dim_maj_svc_cat.acute_ind
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - acute_ind
+      name_column: acute_ind
+      sort_column: acute_ind
+    - unique_name: Major Service Category Group Name
+      label: Major Service Category Group Name
+      description: dim_maj_svc_cat.maj_svc_cat_grp_nm
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - maj_svc_cat_grp_nm
+      name_column: maj_svc_cat_grp_nm
+      sort_column: maj_svc_cat_grp_nm
+    - unique_name: Major Service Category Class Name
+      label: Major Service Category Class Name
+      description: dim_maj_svc_cat.maj_svc_cat_cls_nm
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - maj_svc_cat_cls_nm
+      name_column: maj_svc_cat_cls_nm
+      sort_column: maj_svc_cat_cls_nm
+    - unique_name: Major Service Category Derived Service Category Code
+      label: Major Service Category Derived Service Category Code
+      description: dim_maj_svc_cat.derv_svc_cat_cd
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - derv_svc_cat_cd
+      name_column: derv_svc_cat_cd
+      sort_column: derv_svc_cat_cd
+    - unique_name: Major Service Category Derived Service Category Description
+      label: Major Service Category Derived Service Category Description
+      description: dim_maj_svc_cat.derv_svc_cat_desc
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - derv_svc_cat_desc
+      name_column: derv_svc_cat_desc
+      sort_column: derv_svc_cat_desc
+    - unique_name: Major Service Category Service Category Type
+      label: Major Service Category Service Category Type
+      description: dim_maj_svc_cat.servicecategorytype
+      dataset: dim_maj_svc_cat
+      folder: Major Service Category
+      key_columns:
+      - servicecategorytype
+      name_column: servicecategorytype
+      sort_column: servicecategorytype
+- unique_name: Major Service Category Code
+  label: Major Service Category Code
+  folder: Major Service Category
+  levels:
+  - unique_name: Major Service Category Code
+level_attributes:
+- unique_name: Major Service Category
+  label: Major Service Category
+  description: Major Service Category (dim_maj_svc_cat.maj_svc_cat_desc).
+  dataset: dim_maj_svc_cat
+  name_column: maj_svc_cat_desc
+  key_columns:
+  - maj_svc_cat_id
+  sort_column: maj_svc_cat_desc
+- unique_name: Major Service Category Code
+  label: Major Service Category Code
+  dataset: dim_maj_svc_cat
+  name_column: maj_svc_cat_cd
+  key_columns:
+  - maj_svc_cat_cd
+  sort_column: maj_svc_cat_cd

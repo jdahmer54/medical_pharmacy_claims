@@ -1,0 +1,17 @@
+unique_name: dim_lob
+object_type: dataset
+label: dim_lob
+description: analytics_mee_uat_silver.dim_lob (Power BI table 'dim_lob').
+connection_id: Connection - Claims Experience
+table: dim_lob
+columns:
+- name: lob_id
+  data_type: long
+- name: lob_cd
+  data_type: string
+- name: lob_nm
+  data_type: string
+- name: sub_lob_nm
+  data_type: string
+- name: d_lob_nm
+  data_type: string

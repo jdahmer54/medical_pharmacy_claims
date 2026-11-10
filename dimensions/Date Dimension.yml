@@ -1,0 +1,47 @@
+unique_name: Date Dimension
+object_type: dimension
+label: Date Dimension
+description: Month-end reporting calendar (incurred / filled / membership month).
+type: time
+hierarchies:
+- unique_name: Date Hierarchy
+  label: Date Hierarchy
+  folder: Date Attributes
+  levels:
+  - unique_name: Year
+  - unique_name: Quarter
+  - unique_name: Month
+    secondary_attributes:
+    - unique_name: Month of Year
+      label: Month of Year
+      description: Month number (1-12).
+      dataset: bridge_date_ca
+      folder: Date Attributes
+      key_columns:
+      - month_of_year
+      name_column: month_of_year
+      sort_column: month_of_year
+level_attributes:
+- unique_name: Year
+  label: Year
+  dataset: bridge_date_ca
+  name_column: year_num
+  key_columns:
+  - year_num
+  time_unit: year
+- unique_name: Quarter
+  label: Quarter
+  dataset: bridge_date_ca
+  name_column: quarter_name
+  key_columns:
+  - quarter_key
+  sort_column: quarter_key
+  time_unit: quarter
+- unique_name: Month
+  label: Month
+  dataset: bridge_date_ca
+  name_column: month_name
+  key_columns:
+  - asofmonthenddayid
+  sort_column: asofmonthenddate
+  time_unit: month

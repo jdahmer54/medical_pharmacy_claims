@@ -1,0 +1,19 @@
+unique_name: dim_prov_orgzn_st_ca_test
+object_type: dataset
+label: dim_prov_orgzn_st_ca_test
+description: analytics_mee_uat_silver.dim_prov_orgzn_st_ca_test (Power BI table 'Dim_Provider').
+connection_id: Connection - Claims Experience
+table: dim_prov_orgzn_st_ca_test
+columns:
+- name: prov_orgzn_id
+  data_type: long
+- name: prov_orgzn_typ_id
+  data_type: long
+- name: prov_orgzn_nm
+  data_type: string
+- name: c_prov_orgzn_nm_st
+  data_type: string
+- name: c_prov_st
+  data_type: string
+- name: prov_org_nm_st_id
+  data_type: long

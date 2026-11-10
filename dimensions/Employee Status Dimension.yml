@@ -1,0 +1,30 @@
+unique_name: Employee Status Dimension
+object_type: dimension
+label: Employee Status Dimension
+description: Employee Status (from Power BI table 'Dim_MemberChar').
+type: standard
+hierarchies:
+- unique_name: Employee Status Hierarchy
+  label: Employee Status Hierarchy
+  folder: Employee Status
+  levels:
+  - unique_name: Employee Status
+    secondary_attributes:
+    - unique_name: Employee Status Emp Status Val
+      label: Employee Status Emp Status Val
+      description: dim_mbr_charc.empstatusval
+      dataset: dim_mbr_charc
+      folder: Employee Status
+      key_columns:
+      - empstatusval
+      name_column: empstatusval
+      sort_column: empstatusval
+level_attributes:
+- unique_name: Employee Status
+  label: Employee Status
+  description: Employee Status (dim_mbr_charc.empstatus).
+  dataset: dim_mbr_charc
+  name_column: empstatus
+  key_columns:
+  - empstatuscd
+  sort_column: empstatus

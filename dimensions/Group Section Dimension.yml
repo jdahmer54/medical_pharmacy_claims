@@ -1,0 +1,84 @@
+unique_name: Group Section Dimension
+object_type: dimension
+label: Group Section Dimension
+description: Group Section (from Power BI table 'Dim_GroupSection').
+type: standard
+hierarchies:
+- unique_name: Group Section Hierarchy
+  label: Group Section Hierarchy
+  folder: Group Section
+  levels:
+  - unique_name: Group Section
+    secondary_attributes:
+    - unique_name: Group Number
+      label: Group Number
+      description: dim_grp_sect.grp_nbr
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - grp_nbr
+      name_column: grp_nbr
+      sort_column: grp_nbr
+    - unique_name: Group Section Corporateentitycode
+      label: Group Section Corporateentitycode
+      description: dim_grp_sect.corp_ent_cd
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - corp_ent_cd
+      name_column: corp_ent_cd
+      sort_column: corp_ent_cd
+    - unique_name: Group Section Section Number
+      label: Group Section Section Number
+      description: dim_grp_sect.sect_nbr
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - sect_nbr
+      name_column: sect_nbr
+      sort_column: sect_nbr
+    - unique_name: Group Section Alpha Prefix Code
+      label: Group Section Alpha Prefix Code
+      description: dim_grp_sect.alph_pfx_cd
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - alph_pfx_cd
+      name_column: alph_pfx_cd
+      sort_column: alph_pfx_cd
+    - unique_name: Group Section State Name
+      label: Group Section State Name
+      description: dim_grp_sect.st_nm
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - st_nm
+      name_column: st_nm
+      sort_column: st_nm
+    - unique_name: Group Section grp usr dsply nbr
+      label: Group Section grp usr dsply nbr
+      description: dim_grp_sect.grp_usr_dsply_nbr
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - grp_usr_dsply_nbr
+      name_column: grp_usr_dsply_nbr
+      sort_column: grp_usr_dsply_nbr
+    - unique_name: Group Section sect usr dsply nbr
+      label: Group Section sect usr dsply nbr
+      description: dim_grp_sect.sect_usr_dsply_nbr
+      dataset: dim_grp_sect
+      folder: Group Section
+      key_columns:
+      - sect_usr_dsply_nbr
+      name_column: sect_usr_dsply_nbr
+      sort_column: sect_usr_dsply_nbr
+level_attributes:
+- unique_name: Group Section
+  label: Group Section
+  description: Group Section (dim_grp_sect.grp_nm).
+  dataset: dim_grp_sect
+  name_column: grp_nm
+  key_columns:
+  - grp_sect_id
+  sort_column: grp_nm
