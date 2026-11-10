@@ -1,0 +1,5 @@
+unique_name: Total_SpecialtyAllowed_Pharmacy
+object_type: metric_calc
+label: Total_SpecialtyAllowed_Pharmacy
+description: Converted from DAX measure [Total_SpecialtyAllowed_Pharmacy].
+expression: ([Drug Dimension].[Drug Specialty Drug Indicator].[Drug Specialty Drug Indicator].&[Yes], [Measures].[Rx Provider Allowed Amount])

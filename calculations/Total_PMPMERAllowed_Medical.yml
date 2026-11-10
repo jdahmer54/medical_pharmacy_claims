@@ -1,0 +1,5 @@
+unique_name: Total_PMPMERAllowed_Medical
+object_type: metric_calc
+label: Total_PMPMERAllowed_Medical
+description: Converted from DAX measure [Total_PMPMERAllowed_Medical].
+expression: Divide(([Major Service Category Dimension].[Major Service Category Code].[Major Service Category Code].&[OEMR], [Measures].[Total_OUTAllowedAmount_Medical]), [Measures].[Total_MemberMonth_Medical])

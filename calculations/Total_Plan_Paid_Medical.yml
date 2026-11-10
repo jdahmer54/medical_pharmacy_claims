@@ -1,0 +1,5 @@
+unique_name: Total_Plan_Paid_Medical
+object_type: metric_calc
+label: Total_Plan_Paid_Medical
+description: Converted from DAX measure [Total_Plan_Paid_Medical].
+expression: Divide([Measures].[Total_NetpaidAmount_Medical], [Measures].[Total_AllowedAmount_Medical])

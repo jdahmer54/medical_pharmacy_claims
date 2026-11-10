@@ -1,0 +1,6 @@
+unique_name: Total_ScriptsUnitCostNetPaid_Pharmacy
+object_type: metric_calc
+label: Total_ScriptsUnitCostNetPaid_Pharmacy
+description: Converted from DAX measure [Total_ScriptsUnitCostNetPaid_Pharmacy].
+expression: Divide([Measures].[Total_NetPaidAmount_Pharmacy], [Measures].[Total_Scripts_Pharmacy])
+format: $#,##0.00

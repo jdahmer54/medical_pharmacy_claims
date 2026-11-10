@@ -1,0 +1,5 @@
+unique_name: Total_PROFVisitUnitCostNetPaid_Service
+object_type: metric_calc
+label: Total_PROFVisitUnitCostNetPaid_Service
+description: Converted from DAX measure [Total_PROFVisitUnitCostNetPaid_Service].
+expression: Divide([Measures].[Total_PROFNetPaidAmount_Medical], [Measures].[Total_PROFVisits_Service])

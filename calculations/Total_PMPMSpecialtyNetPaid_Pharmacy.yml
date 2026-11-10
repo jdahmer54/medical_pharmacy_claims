@@ -1,0 +1,5 @@
+unique_name: Total_PMPMSpecialtyNetPaid_Pharmacy
+object_type: metric_calc
+label: Total_PMPMSpecialtyNetPaid_Pharmacy
+description: Converted from DAX measure [Total_PMPMSpecialtyNetPaid_Pharmacy].
+expression: '[Measures].[Total_SpecialtyNetPaid_Pharmacy] / [Measures].[Total_MemberMonth_Pharmacy]'
