@@ -1,0 +1,5 @@
+unique_name: Total_BilledAmount_Medical
+object_type: metric_calc
+label: Total_BilledAmount_Medical
+description: Converted from DAX measure [Total_BilledAmount_Medical].
+expression: '[Measures].[Total_IPABilledAmount_Medical] + [Measures].[Total_OUTBilledAmount_Medical] + [Measures].[Total_PROFBilledmount_Medical]'

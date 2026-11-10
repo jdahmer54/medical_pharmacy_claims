@@ -1,0 +1,5 @@
+unique_name: Total_ERVisitUnitperERCostAllowed_Medical
+object_type: metric_calc
+label: Total_ERVisitUnitperERCostAllowed_Medical
+description: Converted from DAX measure [Total_ERVisitUnitperERCostAllowed_Medical].
+expression: Divide([Measures].[Total_ERAllowedAmount_Medical], [Measures].[Total_ERVisits_Medical])

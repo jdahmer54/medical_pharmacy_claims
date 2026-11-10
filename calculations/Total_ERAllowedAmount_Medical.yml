@@ -1,0 +1,6 @@
+unique_name: Total_ERAllowedAmount_Medical
+object_type: metric_calc
+label: Total_ERAllowedAmount_Medical
+description: Converted from DAX measure [Total_ERAllowedAmount_Medical].
+expression: ([Major Service Category Dimension].[Major Service Category Code].[Major Service Category Code].&[OEMR], [Measures].[Total_OUTAllowedAmount_Medical])
+format: general number

@@ -1,0 +1,5 @@
+unique_name: Total_BilledAmount_BH
+object_type: metric_calc
+label: Total_BilledAmount_BH
+description: Converted from DAX measure [Total_BilledAmount_BH].
+expression: '[Measures].[Total_IPABilledAmount_BH] + [Measures].[Total_OUTBilledAmount_BH] + [Measures].[Total_PROFBilledmount_BH]'

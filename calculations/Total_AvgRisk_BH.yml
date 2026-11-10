@@ -1,0 +1,5 @@
+unique_name: Total_AvgRisk_BH
+object_type: metric_calc
+label: Total_AvgRisk_BH
+description: Converted from DAX measure [Total_AvgRisk_BH].
+expression: Divide([Measures].[Total_MedicalRiskScore_Medical], [Measures].[Total_MemberMonth_Medical])

@@ -1,0 +1,6 @@
+unique_name: Total_Covered_Medical
+object_type: metric_calc
+label: Total_Covered_Medical
+description: Converted from DAX measure [Total_Covered_Medical].
+expression: ([Measures].[Total_OUTBilledAmount_Medical] + [Measures].[Total_IPABilledAmount_Medical] + [Measures].[Total_PROFBilledmount_Medical]) - ([Measures].[OP Non Covered Amount] + [Measures].[IP
+  Non Covered Amount] + [Measures].[Prof Non Covered Amount])

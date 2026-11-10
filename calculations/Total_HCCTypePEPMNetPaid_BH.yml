@@ -1,0 +1,7 @@
+unique_name: Total_HCCTypePEPMNetPaid_BH
+object_type: metric_calc
+label: Total_HCCTypePEPMNetPaid_BH
+description: Converted from DAX measure [Total_HCCTypePEPMNetPaid_BH].
+expression: Divide([Measures].[Total_NetpaidAmount_BH], ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng schm nm].[All],
+  [High Cost Claimant Dimension].[High Cost Claimant cost rng lowr amt].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng upr lmt amt].[All], [High Cost Claimant Dimension].[High Cost Claimant
+  HCCType].[All], [Measures].[Total_SubscriberMonth]))

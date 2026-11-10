@@ -1,0 +1,5 @@
+unique_name: Total_Claimantsperk_Medical
+object_type: metric_calc
+label: Total_Claimantsperk_Medical
+description: Converted from DAX measure [Total_Claimantsperk_Medical].
+expression: Divide([Measures].[Total_Claimants_Medical] * 12000, [Measures].[Total_MemberMonth_Medical])

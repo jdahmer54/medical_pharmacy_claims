@@ -1,0 +1,5 @@
+unique_name: Total_ERNetPaidAmount_Medical
+object_type: metric_calc
+label: Total_ERNetPaidAmount_Medical
+description: Converted from DAX measure [Total_ERNetPaidAmount_Medical].
+expression: ([Major Service Category Dimension].[Major Service Category Code].[Major Service Category Code].&[OEMR], [Measures].[Total_OUTNetPaidAmount_Medical])

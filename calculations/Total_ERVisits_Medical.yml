@@ -1,0 +1,6 @@
+unique_name: Total_ERVisits_Medical
+object_type: metric_calc
+label: Total_ERVisits_Medical
+description: Converted from DAX measure [Total_ERVisits_Medical].
+expression: ([Major Service Category Dimension].[Major Service Category Code].[Major Service Category Code].&[OEMR], [Measures].[Total_OUTVisits_Medical])
+format: general number

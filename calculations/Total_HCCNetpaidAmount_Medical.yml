@@ -1,0 +1,5 @@
+unique_name: Total_HCCNetpaidAmount_Medical
+object_type: metric_calc
+label: Total_HCCNetpaidAmount_Medical
+description: Converted from DAX measure [Total_HCCNetpaidAmount_Medical].
+expression: '[Measures].[Total_HCCIPANetPaidAmount_Medical] + [Measures].[Total_HCCOUTNetPaidAmount_Medical] + [Measures].[Total_HCCPROFNetPaidAmount_Medical]'

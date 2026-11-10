@@ -1,0 +1,5 @@
+unique_name: Total_HCCAllowedAmount_Medical
+object_type: metric_calc
+label: Total_HCCAllowedAmount_Medical
+description: Converted from DAX measure [Total_HCCAllowedAmount_Medical].
+expression: '[Measures].[Total_HCCIPAAllowedAmount_Medical] + [Measures].[Total_HCCOUTAllowedAmount_Medical] + [Measures].[Total_HCCProfAllowedAmount_Medical]'

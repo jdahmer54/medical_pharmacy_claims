@@ -1,0 +1,11 @@
+unique_name: Total_ENANonHCCOUTNetPaidAmount_Medical
+object_type: metric_calc
+label: Total_ENANonHCCOUTNetPaidAmount_Medical
+description: Converted from DAX measure [Total_ENANonHCCOUTNetPaidAmount_Medical].
+expression: (([Account Dimension].[Account Hierarchy].[All], [Account Dimension].[Account Number].[All], [Account Dimension].[Account Corporate Entity Code].[All], [Account Dimension].[Account Federal Employee
+  Program Indicator].[All], [Account Dimension].[Account DWAccess Code].[All], [Account Dimension].[Account State Name].[All], [Account Dimension].[Account Source System Name].[All], [Reporting Segment
+  1 Dimension].[Reporting Segment 1 Hierarchy].[All], [Reporting Segment 2 Dimension].[Reporting Segment 2 Hierarchy].[All], [High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[2],
+  [Measures].[Total_OUTNetPaidAmount_Medical]) + ([Account Dimension].[Account Hierarchy].[All], [Account Dimension].[Account Number].[All], [Account Dimension].[Account Corporate Entity Code].[All], [Account
+  Dimension].[Account Federal Employee Program Indicator].[All], [Account Dimension].[Account DWAccess Code].[All], [Account Dimension].[Account State Name].[All], [Account Dimension].[Account Source System
+  Name].[All], [Reporting Segment 1 Dimension].[Reporting Segment 1 Hierarchy].[All], [Reporting Segment 2 Dimension].[Reporting Segment 2 Hierarchy].[All], [High Cost Claimant Dimension].[High Cost Claimant
+  Hierarchy].[High Cost Claimant].&[3], [Measures].[Total_OUTNetPaidAmount_Medical]))

@@ -1,0 +1,5 @@
+unique_name: Total_DaysSupplyPerK_Pharmacy
+object_type: metric_calc
+label: Total_DaysSupplyPerK_Pharmacy
+description: Converted from DAX measure [Total_DaysSupplyPerK_Pharmacy].
+expression: Divide(([Measures].[Total_DaysSupply_Pharmacy] * 12000), [Measures].[Total_MemberMonth_Pharmacy])

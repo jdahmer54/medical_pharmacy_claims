@@ -1,0 +1,7 @@
+unique_name: Total_HCCTypePEPMAllowed_Pharmacy
+object_type: metric_calc
+label: Total_HCCTypePEPMAllowed_Pharmacy
+description: Converted from DAX measure [Total_HCCTypePEPMAllowed_Pharmacy].
+expression: Divide([Measures].[Total_AllowedAmount_Pharmacy], ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng schm nm].[All],
+  [High Cost Claimant Dimension].[High Cost Claimant cost rng lowr amt].[All], [High Cost Claimant Dimension].[High Cost Claimant cost rng upr lmt amt].[All], [High Cost Claimant Dimension].[High Cost Claimant
+  HCCType].[All], [Measures].[Total_SubscriberMonth_Pharmacy]))

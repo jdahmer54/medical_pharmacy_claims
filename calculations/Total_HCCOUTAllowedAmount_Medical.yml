@@ -1,0 +1,8 @@
+unique_name: Total_HCCOUTAllowedAmount_Medical
+object_type: metric_calc
+label: Total_HCCOUTAllowedAmount_Medical
+description: Converted from DAX measure [Total_HCCOUTAllowedAmount_Medical].
+expression: (([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[6], [Measures].[Total_OUTAllowedAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant
+  Hierarchy].[High Cost Claimant].&[7], [Measures].[Total_OUTAllowedAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[8], [Measures].[Total_OUTAllowedAmount_Medical])
+  + ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[9], [Measures].[Total_OUTAllowedAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High
+  Cost Claimant].&[10], [Measures].[Total_OUTAllowedAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[11], [Measures].[Total_OUTAllowedAmount_Medical]))

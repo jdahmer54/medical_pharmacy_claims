@@ -1,0 +1,5 @@
+unique_name: Total_HCCPEPMNetPaidAmount_Medical
+object_type: metric_calc
+label: Total_HCCPEPMNetPaidAmount_Medical
+description: Converted from DAX measure [Total_HCCPEPMNetPaidAmount_Medical].
+expression: Divide([Measures].[Total_HCCNetpaidAmount_Medical], [Measures].[Total_SubscriberMonth_Medical])

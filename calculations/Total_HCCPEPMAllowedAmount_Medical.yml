@@ -1,0 +1,5 @@
+unique_name: Total_HCCPEPMAllowedAmount_Medical
+object_type: metric_calc
+label: Total_HCCPEPMAllowedAmount_Medical
+description: Converted from DAX measure [Total_HCCPEPMAllowedAmount_Medical].
+expression: Divide([Measures].[Total_HCCAllowedAmount_Medical], [Measures].[Total_SubscriberMonth_Medical])

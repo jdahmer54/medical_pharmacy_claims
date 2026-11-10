@@ -1,0 +1,5 @@
+unique_name: Total_IPANonCoveredAmount_Medical
+object_type: metric_calc
+label: Total_IPANonCoveredAmount_Medical
+description: Converted from DAX measure [Total_IPANonCoveredAmount_Medical].
+expression: '[Measures].[IP Non Covered Amount]'

@@ -1,0 +1,5 @@
+unique_name: Total_IPAUnitCostAllowed_Medical
+object_type: metric_calc
+label: Total_IPAUnitCostAllowed_Medical
+description: Converted from DAX measure [Total_IPAUnitCostAllowed_Medical].
+expression: Divide([Measures].[Total_IPAAllowedAmount_Medical], [Measures].[Total_AdmissionDays_Medical])

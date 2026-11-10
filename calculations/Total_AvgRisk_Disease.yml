@@ -1,0 +1,6 @@
+unique_name: Total_AvgRisk_Disease
+object_type: metric_calc
+label: Total_AvgRisk_Disease
+description: Converted from DAX measure [Total_AvgRisk_Disease].
+expression: Divide([Measures].[Total_CCSRL1RiskScore_Medical], [Measures].[Total_CCSRL1Claimants_Medical])
+format: standard
