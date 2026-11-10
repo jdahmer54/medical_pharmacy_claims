@@ -1,0 +1,5 @@
+unique_name: Total_PEPMAllowed_Medical
+object_type: metric_calc
+label: Total_PEPMAllowed_Medical
+description: Converted from DAX measure [Total_PEPMAllowed_Medical].
+expression: Divide([Measures].[Total_AllowedAmount_Medical], [Measures].[Total_SubscriberMonth_Medical])

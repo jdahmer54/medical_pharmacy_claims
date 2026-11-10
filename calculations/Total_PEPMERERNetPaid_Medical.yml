@@ -1,0 +1,5 @@
+unique_name: Total_PEPMERERNetPaid_Medical
+object_type: metric_calc
+label: Total_PEPMERERNetPaid_Medical
+description: Converted from DAX measure [Total_PEPMERERNetPaid_Medical].
+expression: Divide(([Major Service Category Dimension].[Major Service Category Code].[Major Service Category Code].&[OEMR], [Measures].[Total_OUTNetPaidAmount_Medical]), [Measures].[Total_SubscriberMonth_Medical])

@@ -1,0 +1,5 @@
+unique_name: Total_MemberMonth_BH
+object_type: metric_calc
+label: Total_MemberMonth_BH
+description: Converted from DAX measure [Total_MemberMonth_BH].
+expression: Divide(([Measures].[Total_MemberMonth_Medical]), [Measures].[Member Month Month End Day Id Distinct Count])

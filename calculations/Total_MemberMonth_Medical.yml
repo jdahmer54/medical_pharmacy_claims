@@ -1,0 +1,7 @@
+unique_name: Total_MemberMonth_Medical
+object_type: metric_calc
+label: Total_MemberMonth_Medical
+description: Converted from DAX measure [Total_MemberMonth_Medical].
+expression: (([Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y], [Product Dimension].[Product Type Code].[All], [Measures].[Total_MemberMonth])
+  - ([Membership Coverage Dimension].[Membership Coverage Medical Indicator].[Membership Coverage Medical Indicator].&[Y], [Product Dimension].[Product Type Code].[Product Type Code].&[Drug], [Measures].[Total_MemberMonth]))
+format: general number

@@ -1,0 +1,6 @@
+unique_name: Total_Medical_Covered_BH
+object_type: metric_calc
+label: Total_Medical_Covered_BH
+description: Converted from DAX measure [Total_Medical_Covered_BH].
+expression: ([Measures].[Total_OUTBilledAmount_BH] + [Measures].[Total_IPABilledAmount_BH] + [Measures].[Total_PROFBilledmount_BH]) - ([Measures].[BH OP Non Covered Amount] + [Measures].[Total_IPANonCoveredAmount_BH]
+  + [Measures].[BH Prof Non Covered Amount])

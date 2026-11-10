@@ -1,0 +1,6 @@
+unique_name: Total_OOP_medical
+object_type: metric_calc
+label: Total_OOP_medical
+description: Converted from DAX measure [Total_OOP_medical].
+expression: '[Measures].[IP Medical Coinsurance] + [Measures].[IP Medical Copayment] + [Measures].[IP Medical Deductible] + [Measures].[OP Medical Coinsurance] + [Measures].[OP Medical Copayment] + [Measures].[OP
+  Medical Deductible] + [Measures].[Prof Medical Coinsurance] + [Measures].[Prof Medical Copayment] + [Measures].[Prof Medical Deductible]'

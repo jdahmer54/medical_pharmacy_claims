@@ -1,0 +1,6 @@
+unique_name: Total_NonHCCPROFNetPaidAmount_Medical
+object_type: metric_calc
+label: Total_NonHCCPROFNetPaidAmount_Medical
+description: Converted from DAX measure [Total_NonHCCPROFNetPaidAmount_Medical].
+expression: (([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[2], [Measures].[Total_PROFNetPaidAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant
+  Hierarchy].[High Cost Claimant].&[3], [Measures].[Total_PROFNetPaidAmount_Medical]))

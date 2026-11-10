@@ -1,0 +1,6 @@
+unique_name: Total_NetPaid_Per_Admit
+object_type: metric_calc
+label: Total_NetPaid_Per_Admit
+description: Converted from DAX measure [Total_NetPaid_Per_Admit].
+expression: Divide([Measures].[Total_IPANetPaidAmount_Medical], ([Measures].[Total_Admits_Medical]))
+format: $#,##0.00

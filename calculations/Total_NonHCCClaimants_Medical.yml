@@ -1,0 +1,7 @@
+unique_name: Total_NonHCCClaimants_Medical
+object_type: metric_calc
+label: Total_NonHCCClaimants_Medical
+description: Converted from DAX measure [Total_NonHCCClaimants_Medical].
+expression: (([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[2], [Measures].[Total_Claimants_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High
+  Cost Claimant].&[3], [Measures].[Total_Claimants_Medical]))
+format: general number

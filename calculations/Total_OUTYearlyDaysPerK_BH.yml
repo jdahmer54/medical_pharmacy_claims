@@ -1,0 +1,5 @@
+unique_name: Total_OUTYearlyDaysPerK_BH
+object_type: metric_calc
+label: Total_OUTYearlyDaysPerK_BH
+description: Converted from DAX measure [Total_OUTYearlyDaysPerK_BH].
+expression: Divide(([Measures].[Total_OUTDays_BH] * 12000), [Measures].[Total_MemberMonth_Medical])

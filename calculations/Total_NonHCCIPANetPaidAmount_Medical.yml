@@ -1,0 +1,6 @@
+unique_name: Total_NonHCCIPANetPaidAmount_Medical
+object_type: metric_calc
+label: Total_NonHCCIPANetPaidAmount_Medical
+description: Converted from DAX measure [Total_NonHCCIPANetPaidAmount_Medical].
+expression: (([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[2], [Measures].[Total_IPANetPaidAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant
+  Hierarchy].[High Cost Claimant].&[3], [Measures].[Total_IPANetPaidAmount_Medical]))

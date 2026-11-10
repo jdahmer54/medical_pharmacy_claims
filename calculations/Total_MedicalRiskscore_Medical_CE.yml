@@ -1,0 +1,6 @@
+unique_name: Total_MedicalRiskscore_Medical_CE
+object_type: metric_calc
+label: Total_MedicalRiskscore_Medical_CE
+description: Converted from DAX measure [Total_MedicalRiskscore_Medical_CE].
+expression: '[Measures].[Cont Enroll Medical Risk Score]'
+format: general number

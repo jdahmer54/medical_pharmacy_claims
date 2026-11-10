@@ -1,0 +1,5 @@
+unique_name: Total_PEPM_CE_AllowedAmount
+object_type: metric_calc
+label: Total_PEPM_CE_AllowedAmount
+description: Converted from DAX measure [Total_PEPM_CE_AllowedAmount].
+expression: Divide([Measures].[Cont Enroll Allowed Amount Avg], [Measures].[Total_Subscriber_CE_Count])

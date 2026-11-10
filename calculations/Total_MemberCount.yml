@@ -1,0 +1,5 @@
+unique_name: Total_MemberCount
+object_type: metric_calc
+label: Total_MemberCount
+description: Converted from DAX measure [Total_MemberCount].
+expression: '[Measures].[Cont Enroll Member Count]'
