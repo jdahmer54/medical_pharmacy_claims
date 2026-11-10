@@ -1,0 +1,5 @@
+unique_name: Total_YearlyOUTVisitsPerK_Medical
+object_type: metric_calc
+label: Total_YearlyOUTVisitsPerK_Medical
+description: Converted from DAX measure [Total_YearlyOUTVisitsPerK_Medical].
+expression: Divide(([Measures].[Total_OUTVisits_Medical] * 12000), [Measures].[Total_MemberMonth_Medical])

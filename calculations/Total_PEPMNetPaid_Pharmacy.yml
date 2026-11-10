@@ -1,0 +1,5 @@
+unique_name: Total_PEPMNetPaid_Pharmacy
+object_type: metric_calc
+label: Total_PEPMNetPaid_Pharmacy
+description: Converted from DAX measure [Total_PEPMNetPaid_Pharmacy].
+expression: Divide([Measures].[Total_NetPaidAmount_Pharmacy], [Measures].[Total_SubscriberMonth])

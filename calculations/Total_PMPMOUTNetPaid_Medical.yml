@@ -1,0 +1,5 @@
+unique_name: Total_PMPMOUTNetPaid_Medical
+object_type: metric_calc
+label: Total_PMPMOUTNetPaid_Medical
+description: Converted from DAX measure [Total_PMPMOUTNetPaid_Medical].
+expression: Divide([Measures].[Total_OUTNetPaidAmount_Medical], [Measures].[Total_MemberMonth_Medical])

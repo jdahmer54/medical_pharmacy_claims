@@ -1,0 +1,5 @@
+unique_name: Total_ProfVisitUnitCostAllowed_BH
+object_type: metric_calc
+label: Total_ProfVisitUnitCostAllowed_BH
+description: Converted from DAX measure [Total_ProfVisitUnitCostAllowed_BH].
+expression: Divide([Measures].[Total_PROFAllowedAmount_BH], [Measures].[Total_ProfVisits_BH])

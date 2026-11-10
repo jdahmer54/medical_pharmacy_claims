@@ -1,0 +1,6 @@
+unique_name: Total_Specialty%Spend_Pharmacy
+object_type: metric_calc
+label: Total_Specialty%Spend_Pharmacy
+description: Converted from DAX measure [Total_Specialty%Spend_Pharmacy].
+expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Formulary Indicator].[Drug Handling Profile Formulary Indicator].&[Yes], [Measures].[Rx Provider Allowed Amount]), [Measures].[Rx
+  Provider Allowed Amount], 0)

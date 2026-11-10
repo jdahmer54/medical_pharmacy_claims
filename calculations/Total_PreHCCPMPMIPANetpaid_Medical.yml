@@ -1,0 +1,6 @@
+unique_name: Total_PreHCCPMPMIPANetpaid_Medical
+object_type: metric_calc
+label: Total_PreHCCPMPMIPANetpaid_Medical
+description: Converted from DAX measure [Total_PreHCCPMPMIPANetpaid_Medical].
+expression: (([High Cost Claimant Dimension].[High Cost Claimant Hierarchy].[High Cost Claimant].&[4], [Measures].[Total_IPANetPaidAmount_Medical]) + ([High Cost Claimant Dimension].[High Cost Claimant
+  Hierarchy].[High Cost Claimant].&[5], [Measures].[Total_IPANetPaidAmount_Medical]))

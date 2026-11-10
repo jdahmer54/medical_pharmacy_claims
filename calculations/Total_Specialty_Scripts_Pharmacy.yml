@@ -1,0 +1,6 @@
+unique_name: Total_Specialty%Scripts_Pharmacy
+object_type: metric_calc
+label: Total_Specialty%Scripts_Pharmacy
+description: Converted from DAX measure [Total_Specialty%Scripts_Pharmacy].
+expression: Divide(([Drug Handling Profile Dimension].[Drug Handling Profile Formulary Indicator].[Drug Handling Profile Formulary Indicator].&[Yes], [Measures].[Rx Weighted Claims]), [Measures].[Rx Weighted
+  Claims], 0)

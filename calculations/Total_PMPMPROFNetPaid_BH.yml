@@ -1,0 +1,5 @@
+unique_name: Total_PMPMPROFNetPaid_BH
+object_type: metric_calc
+label: Total_PMPMPROFNetPaid_BH
+description: Converted from DAX measure [Total_PMPMPROFNetPaid_BH].
+expression: Divide([Measures].[Total_PROFNetPaidAmount_BH], [Measures].[Total_MemberMonth_Medical])

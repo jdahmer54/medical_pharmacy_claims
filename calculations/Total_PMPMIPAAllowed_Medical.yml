@@ -1,0 +1,5 @@
+unique_name: Total_PMPMIPAAllowed_Medical
+object_type: metric_calc
+label: Total_PMPMIPAAllowed_Medical
+description: Converted from DAX measure [Total_PMPMIPAAllowed_Medical].
+expression: Divide([Measures].[Total_IPAAllowedAmount_Medical], [Measures].[Total_MemberMonth_Medical])

@@ -1,0 +1,5 @@
+unique_name: Total_PROFUnitCostAllowed_Medical
+object_type: metric_calc
+label: Total_PROFUnitCostAllowed_Medical
+description: Converted from DAX measure [Total_PROFUnitCostAllowed_Medical].
+expression: Divide([Measures].[Total_PROFAllowedAmount_Medical], [Measures].[Total_AdmissionDays_Medical])

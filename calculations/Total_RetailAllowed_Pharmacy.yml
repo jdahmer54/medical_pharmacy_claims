@@ -1,0 +1,5 @@
+unique_name: Total_RetailAllowed_Pharmacy
+object_type: metric_calc
+label: Total_RetailAllowed_Pharmacy
+description: Converted from DAX measure [Total_RetailAllowed_Pharmacy].
+expression: ([Drug Handling Profile Dimension].[Drug Handling Profile Mail Order Type Name].[Drug Handling Profile Mail Order Type Name].&[Retail], [Measures].[Rx Provider Allowed Amount])
